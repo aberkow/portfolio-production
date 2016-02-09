@@ -1,0 +1,8 @@
+.container {
+    background-color: red;
+}
+
+.container-fluid {
+    background-color: green;
+    width: 12rem;
+}
