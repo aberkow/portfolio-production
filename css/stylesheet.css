@@ -1,8 +1,12 @@
-.container {
-    background-color: red;
+* {
+    border: 1px solid red;
 }
 
 .container-fluid {
     background-color: green;
-    width: 12rem;
+    max-height: 100%;
+}
+
+.left {
+    min-height: 100%;
 }
