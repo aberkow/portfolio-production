@@ -1,12 +1,74 @@
+/*
+screen - #c5c1c0
+steel - #0a1612
+denim - #1a2930
+marigold - #f7ce3e
+*/
+
 * {
+    box-sizing: border-box;
     border: 1px solid red;
+    padding: 0;
 }
 
 .container-fluid {
-    background-color: green;
-    max-height: 100%;
+    margin-left: -20px;
+    margin-right: -20px;
 }
 
 .left {
-    min-height: 100%;
+    background-color: #1a2930;
+    //margin-left: -20px;
+}
+
+.left__title {
+    text-align: center;
+    color: #c5c1c0;
+}
+
+.left__headshot {
+    text-align: center;
+}
+
+.left__headshot-img {
+    height: 15rem;
+}
+
+.mail {
+    text-align: center;
+    margin: 2rem 0;
+    color: white;
+}
+
+.mail__button {
+    font-size: 1.5rem;
+    padding: 1rem;
+    border-radius: 4px;
+    border: 1px solid #c5c1c0;
+}
+
+.mail__button:hover {
+    background-color: #f7ce3e;
+    border: 1px solid #f7ce3e;
+}
+
+.right {
+    background-color: #c5c1c0;
+    //margin-right: -20px;
+}
+
+.right__title {
+    color: #1a2930;
+}
+
+
+
+
+
+
+.left__intro-text {
+    text-align: center;
+    margin: 0 2rem;
+    color: #c5c1c0;
+    font-size: 4rem;
 }

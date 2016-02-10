@@ -5,19 +5,50 @@
     <meta name="viewport" content="width=device-width, inital-scale=1">
     <title>Document</title>
     <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/stylesheet.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/stylesheet.css">
+    
     <!--
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
     -->
 </head>
 <body>
-  <div class="container-fluid col-md-6 left">
-      <h1 class="left__title">This is bootstrap left</h1>
-  </div>
-  <div class="container-fluid col-md-6 right">
-      <h1 class="right__title">This is bootstrap right</h1>
-  </div>
+  <section class="container-fluid">
+      <div class="col-md-6 left">
+          <nav class="left__nav">social links</nav>
+          <h1 class="left__title">Welcome - I'm Adam</h1>
+          <div class="left__headshot">
+              <img class="left__headshot-img img-circle" src="../images/AJB-Headshot.jpg" alt="headshot">
+            </div>
+        <div class="left__intro-text">I'm a web developer based in West Hartford, CT.</div>
+             
+        <div class="mail">
+              <button class="mail__button">Let's meet for coffee</button>
+        </div>
+      </div>
+      
+  
+      <div class="col-md-6 right">
+          <div class="right__about-me">
+              <div class="right__about-me-tag">
+                  About me
+              </div>
+              <div class="right__about-me-text">
+                  Lots of stuff about me.
+              </div>
+          </div>
+          
+          <div class="right__projects">
+              <div class="right__projects-tag">
+                  Projects
+              </div>
+              <div class="right__projects-area">
+                  list of projects (accordion?)
+              </div>
+          </div>    
+          
+      </div>
+    </section>
      <script src="http://code.jquery.com/jquery.min.js"></script>     
     <script src="../js/bootstrap.min.js"></script>
     <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>  -->
