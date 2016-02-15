@@ -19,19 +19,36 @@ marigold - #f7ce3e
 .left {
     background-color: #1a2930;
     //margin-left: -20px;
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    float: left;
 }
 
 .left__title {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
     text-align: center;
     color: #c5c1c0;
 }
 
 .left__headshot {
     text-align: center;
+    transform: rotate(-13deg);
+    width: 16rem;
+    margin: auto;
 }
 
 .left__headshot-img {
     height: 15rem;
+}
+
+.left__intro-text {
+    text-align: center;
+    margin: 4rem 2rem;
+    color: #c5c1c0;
+    font-size: 4rem;
 }
 
 .mail {
@@ -52,9 +69,24 @@ marigold - #f7ce3e
     border: 1px solid #f7ce3e;
 }
 
+.mail__button-link {
+    color: white;
+    text-decoration: none;
+    font-size: 2.5rem;
+}
+
+.mail__button-link:hover {
+    text-decoration: none;
+}
+
 .right {
     background-color: #c5c1c0;
     //margin-right: -20px;
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    float: right;
 }
 
 .right__title {
@@ -66,9 +98,10 @@ marigold - #f7ce3e
 
 
 
-.left__intro-text {
-    text-align: center;
-    margin: 0 2rem;
-    color: #c5c1c0;
-    font-size: 4rem;
+
+
+.left__nav {
+    margin: 1rem 0 1rem 0;
+    font-size: 1.5rem;
+    color: white;
 }
