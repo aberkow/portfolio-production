@@ -6,24 +6,79 @@ marigold - #f7ce3e
 */
 
 * {
-    box-sizing: border-box;
-    border: 1px solid red;
-    padding: 0;
+    //border: 1px red solid;       
 }
 
+html, body {
+    height: 100%;
+}
+
+.header__nav-icons {
+    display: inline-block;
+    list-style-type: none;  
+}
+
+.row {
+    height: 100%;
+    border: 1px blue solid;
+}
+
+.left__title {
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    text-align: center;
+    color: #c5c1c0;
+}
+
+.left__headshot {
+    text-align: center;
+    transform: rotate(-13deg);
+    width: 16rem;
+    margin: auto;
+}
+
+.left__headshot-img {
+    height: 15rem;
+}
+
+.left__intro-text {
+    text-align: center;
+    margin: 4rem 2rem;
+    color: #c5c1c0;
+    font-size: 4rem;
+}
+
+
+
+
+/*
 .container-fluid {
     margin-left: -20px;
     margin-right: -20px;
+    
+}
+
+.row {
+    height: 100%;
+    background-color: red;
 }
 
 .left {
     background-color: #1a2930;
     //margin-left: -20px;
+
     position: fixed;
     left: 0;
     top: 0;
-    height: 100%;
+
+    min-height: 100%;
     float: left;
+}
+
+.left__nav {
+    margin: 1rem 0 1rem 0;
+    font-size: 1.5rem;
+    color: white;
 }
 
 .left__title {
@@ -82,9 +137,12 @@ marigold - #f7ce3e
 .right {
     background-color: #c5c1c0;
     //margin-right: -20px;
-    position: fixed;
+
+    position: absolute;
     right: 0;
     top: 0;
+    bottom: 0;
+
     height: 100%;
     float: right;
 }
@@ -92,6 +150,7 @@ marigold - #f7ce3e
 .right__title {
     color: #1a2930;
 }
+*/
 
 
 
@@ -99,9 +158,22 @@ marigold - #f7ce3e
 
 
 
+.col-md-6 {
+    height: 100%
+}
 
-.left__nav {
-    margin: 1rem 0 1rem 0;
-    font-size: 1.5rem;
-    color: white;
+.container-fluid {
+    height: 100%;
+}
+
+.col-md-6 {
+    
+}
+
+.left {
+    background-color: #1a2930;
+}
+
+.right {
+    background-color: #c5c1c0;
 }
