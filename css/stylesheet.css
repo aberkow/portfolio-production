@@ -13,6 +13,15 @@ html, body {
     height: 100%;
 }
 
+
+.header__nav {
+    margin: 1rem 0;
+}
+
+.header__nav-list {
+    margin: 0;
+}
+
 .header__nav-icons {
     display: inline-block;
     list-style-type: none;  
@@ -28,6 +37,9 @@ html, body {
     margin-bottom: 4rem;
     text-align: center;
     color: #c5c1c0;
+    font-family: Halant, serif;
+    font-size: 8rem;
+    
 }
 
 .left__headshot {
@@ -38,7 +50,7 @@ html, body {
 }
 
 .left__headshot-img {
-    height: 15rem;
+    height: 17rem;
 }
 
 .left__intro-text {
@@ -46,10 +58,69 @@ html, body {
     margin: 4rem 2rem;
     color: #c5c1c0;
     font-size: 4rem;
+    font-family: Halant, serif;
+}
+
+.about {
+    margin-top: 6.4rem;
+}
+
+.about__title {
+    font-family: Abel, sans-serif;
+    font-size: 3rem;
+    color: #1a2930;
+}
+
+.about__text {
+    font-family: Abel, sans-serif;
+    font-size: 2rem;
+    color: #1a2930;
+}
+
+.portfolio__title {
+    font-family: Abel, sans-serif;
+    font-size: 3rem;
+    color: #1a2930;
+}
+
+.panel {
+    background-color: #c5c1c0;
+    border: 1px solid #c5c1c0;
+}
+
+.panel-body {
+    font-family: Abel, sans-serif;
+    font-size: 1.5rem;
+    color: #1a2930;
+    
 }
 
 
+.panel-default > .panel-heading {
+    background-color: #1a2930;
+}
 
+.panel-default > .panel-heading:hover {
+    background-color: #f7ce3e;
+}
+
+.panel-title a {
+    text-decoration: none;
+    font-family: Abel, sans-serif;
+    font-size: 2rem;
+    color: #c5c1c0; 
+}
+
+.panel-title:hover {
+    color: #0a1612;
+}
+
+.panel-title a:hover {
+    text-decoration: none;
+    font-family: Abel, sans-serif;
+    font-size: 2rem;
+    color: #0a1612; 
+}
 
 /*
 .container-fluid {
