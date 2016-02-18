@@ -1,0 +1,32 @@
+{
+  "name": "dependencies",
+  "description": "svg sprites",
+  "main": "index.js",
+  "authors": [
+    "aberkow <berkowitz.clarinet@gmail.com>"
+  ],
+  "license": "ISC",
+  "keywords": [
+    "svg",
+    "sprites"
+  ],
+  "homepage": "https://github.com/aberkow/portfolio",
+  "moduleType": [],
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "Font-Awesome-SVG-PNG": "font-awesome-svg-png#^1.1.2"
+  },
+    "exportsOverride": {
+  "Font-Awesome-SVG-PNG": {
+        "svg": "black/svg",
+        "png": "black/png/128/"
+        }
+    }
+}

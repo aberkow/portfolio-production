@@ -18,30 +18,40 @@
 </head>
 <body>
 <!-- Header w. nav links etc.-->
-  <section class="header">
-      <div class="header__nav">
-          <ul class="header__nav-list">
-              <li class="header__nav-icons">twitter</li>
-              <li class="header__nav-icons">facebook</li>
-              <li class="header__nav-icons">linkedin</li>
-              <li class="header__nav-icons">github</li>
-          </ul>
+  <section class="container-fluid top">
+      <div class="row header__container">
+          <div class="col-md-12 header__nav">
+              <ul class="header__nav-list">
+                  <li class="header__nav-icons">twitter</li>
+                  <li class="header__nav-icons">facebook</li>
+                  <li class="header__nav-icons">linkedin</li>
+                  <li class="header__nav-icons">github</li>
+              </ul>
+          </div>
       </div>
+      <div class="top__welcome">
+              <h1 class="top__welcome-text">Adam J. Berkowitz - Web Developer</h1>
+      </div>
+
+      <div class="top__button">
+        <a href="mailto:adam@adamjberkowitz.com"><button class="btn btn-default btn-lg">Let's talk</button></a>
+      </div>
+
   </section>
   
 <!--  main area left = intro right = text   -->
   <section class="container-fluid main">
       <div class="row main__container">
-           <div class="col-md-6 left">
-              <h1 class="left__title">Hello </h1>
-              <div class="left__headshot">
-                  <img class="left__headshot-img img-circle" src="../images/AJB-Headshot.jpg" alt="headshot">
+           <div class="col-md-6 intro">
+              <h1 class="intro__title">Hello </h1>
+              <div class="intro__headshot">
+                  <img class="intro__headshot-img img-circle" src="../images/AJB-Headshot.jpg" alt="headshot">
               </div>
-              <div class="left__intro-text">I'm Adam, a web developer based in West Hartford, CT.</div>
-               
-           </div> 
+              <div class="intro__text">I'm Adam, a web developer based in West Hartford, CT.</div>
+             </div>
+              
            
-           <div class="col-md-6 right">
+           <div class="col-md-6 content">
                <div class="about">
                    <h3 class="about__title">
                        About Me
@@ -54,114 +64,14 @@
                    <h3 class="portfolio__title">
                        Portfolio
                    </h3>
-                   <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingOne">
-      <h4 class="panel-title">
-        <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-          Collapsible Group Item #1
-        </a>
-      </h4>
-    </div>
-    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingTwo">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-          Collapsible Group Item #2
-        </a>
-      </h4>
-    </div>
-    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-  <div class="panel panel-default">
-    <div class="panel-heading" role="tab" id="headingThree">
-      <h4 class="panel-title">
-        <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-          Collapsible Group Item #3
-        </a>
-      </h4>
-    </div>
-    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
-      <div class="panel-body">
-        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-      </div>
-    </div>
-  </div>
-</div>
+                   
                </div>
            </div>     
       </div>
   </section>
-   
-    
-    
-    
-    
-    
-    
-    
-    
+
     <script src="http://code.jquery.com/jquery.min.js"></script>     
     <script src="../js/bootstrap.min.js"></script>
     <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>  -->
 </body>
 </html>
-
-<!--
-
-<section class="container-fluid">
-      <div class="col-md-6 left">
-          <nav class="left__nav">social links</nav>
-          <div class="row">
-              <h1 class="left__title">Welcome!</h1>
-              <div class="left__headshot">
-                  <img class="left__headshot-img img-circle" src="../images/AJB-Headshot.jpg" alt="headshot">
-                </div>
-            <div class="left__intro-text">I'm Adam, a web developer based in West Hartford, CT.</div>
-
-            <div class="mail">
-                  <button class="mail__button"><a class="mail__button-link" href="mailto:adam@adamjberkowitz.com">Let's meet for coffee</a></button>
-            </div>
-          </div>
-
-
-          <div class="col-md-6 right">
-              <div class="right__about-me">
-                  <div class="right__about-me-tag">
-                      About me
-                  </div>
-                  <div class="right__about-me-text">
-                      <p class="right__about-me-story">This year I have begun my second career as a web developer. My family and I live in West Hartford CT, where I have been a professional clarinetist and teacher for the last eight years. I believe that my skills as a musician (attention to detail, willingness to experiment, devotion to practicing a craft) will help me succeed on this new path. When I'm not coding or practicing, my family is the major influence on my life. My wife and I have two sons one of whom has Fragile X Syndrome and the other is a carrier. My goal is to combine these aspects of my life through technology and coding. </p>
-                  </div>
-              </div>
-
-              <div class="right__projects">
-                  <div class="right__projects-tag">
-                      Projects
-                  </div>
-                  <div class="right__projects-area">
-            This should include: screenshot, list of langauges used, challenges faced/overcome.
-                      Hack the times <br>
-                      About Me <br>
-                      jQuery Streetfighter <br>
-                      Shopping List
-                  </div>
-              </div>    
-
-          </div>
-      </div>
-      </section>
--->
-
-
-

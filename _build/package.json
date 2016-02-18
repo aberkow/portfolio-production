@@ -1,0 +1,19 @@
+{
+  "name": "dependencies",
+  "version": "1.0.0",
+  "description": "svg sprites",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "svg",
+    "sprites"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "grunt-bower-task": "^0.4.0",
+    "grunt-contrib-copy": "^0.8.2"
+  }
+}
