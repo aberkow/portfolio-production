@@ -144,7 +144,7 @@ html, body {
     padding-top: 4rem;
 }
 
-.about__title {
+.about__title, .skills__title, .portfolio__title {
     font-family: Abel, sans-serif;
     font-size: 3rem;
     color: #032b2f;
@@ -170,10 +170,21 @@ html, body {
     color: #08708a;
 }
 
-.portfolio__title {
+.skills__list-head {
     font-family: Abel, sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     color: #032b2f;
+}
+
+.list-group {
+    font-family: Abel, sans-serif;
+    font-size: 1.5rem;
+}
+
+.list-group-item {
+    background-color: #d0d3c5;
+    border: 1px solid #d0d3c5;
+    display: inline-block;
 }
 
 .panel {
