@@ -95,9 +95,25 @@ html, body {
     text-decoration: none;
 }
 
+
+/*Hide unsplash link everywhere except top. Or put in footer? Make the .content area scroll and leave the .intro alone.*/
+
+.main, .main__container {
+    min-height: 100%;
+    background-color: #d0d3c5;
+}
+
+.intro, .content {
+    height: 100%;      
+}
+
+/*
 .main, .main__container, .intro, .content {
     height: 100%;
 }
+*/
+
+
 
 .intro, .content {
     background-color: #d0d3c5;
@@ -146,6 +162,10 @@ html, body {
     font-family: Abel, sans-serif;
     font-size: 2rem;
     color: #032b2f;
+}
+
+.about__text-link {
+    color: #d73a31;
 }
 
 .portfolio__title {
