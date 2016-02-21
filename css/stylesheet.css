@@ -61,7 +61,6 @@ html, body {
     margin-top: 20rem;
     font-family: Halant, serif;
     font-size: 5rem;
-/*    animation: fade in name/button? */
 }
 
 .top__button {
@@ -98,20 +97,9 @@ html, body {
 
 /*Hide unsplash link everywhere except top. Or put in footer? Make the .content area scroll and leave the .intro alone.*/
 
-.main, .main__container {
-    min-height: 100%;
-    background-color: #d0d3c5;
-}
-
-.intro, .content {
-    height: 100%;      
-}
-
-/*
 .main, .main__container, .intro, .content {
     height: 100%;
 }
-*/
 
 
 
@@ -148,6 +136,10 @@ html, body {
     font-family: Halant, serif;
 }
 
+.content {
+    overflow-y: scroll;
+}
+
 .about {
     padding-top: 4rem;
 }
@@ -166,6 +158,11 @@ html, body {
 
 .about__text-link {
     color: #d73a31;
+}
+
+.about__text-link:hover {
+    text-decoration: none;
+    color: #08708a;
 }
 
 .portfolio__title {
