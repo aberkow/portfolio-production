@@ -36,8 +36,20 @@ html, body {
 
 .header__nav-icons {
     display: inline-block;
-    list-style-type: none; 
+    list-style-type: none;
+}
+
+.fa-linkedin-square, .fa-facebook-square, .fa-twitter-square {
+    padding-left: 0.5rem;
+}
+
+.header__nav-icons > a {
     color: #d73a31;
+}
+
+.header__nav-icons > a:hover {
+    color: #032b2f;
+    cursor: pointer;
 }
 
 .top__welcome {
@@ -70,6 +82,19 @@ html, body {
     border: 1px solid #08708a;
 }
 
+.top__credit {
+    position: fixed;
+    bottom: 20px;
+    left: 45px;
+    font-size: 1.5rem;
+    font-family: Abel, sans-serif;
+}
+
+.top__credit a {
+    color: #d73a31;
+    text-decoration: none;
+}
+
 .main, .main__container, .intro, .content {
     height: 100%;
 }
@@ -80,6 +105,7 @@ html, body {
 
 .intro__title {
     padding-top: 4rem;
+    margin-top: 0;
     margin-bottom: 4rem;
     text-align: center;
     color: #032b2f;
@@ -165,3 +191,8 @@ html, body {
     font-size: 2rem;
     color: #032b2f;
 }
+
+
+
+
+
