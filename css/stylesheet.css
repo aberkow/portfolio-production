@@ -79,7 +79,7 @@ html, body {
 }
 
 .intro__title {
-    margin-top: 4rem;
+    padding-top: 4rem;
     margin-bottom: 4rem;
     text-align: center;
     color: #032b2f;
@@ -107,7 +107,7 @@ html, body {
 }
 
 .about {
-    margin-top: 6.4rem;
+    padding-top: 4rem;
 }
 
 .about__title {
