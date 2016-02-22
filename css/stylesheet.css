@@ -6,6 +6,8 @@ Tomato - #d73a31;
 Hunter - #032b2f;
 */
 
+/*add paralax effect for bg image*/
+
 * {
     //border: 1px red solid;       
 }
@@ -137,6 +139,8 @@ html, body {
     font-family: Halant, serif;
 }
 
+
+/*Use Bootstrap use Affix instead of overflow*/
 .content {
     overflow-y: scroll;
 }
