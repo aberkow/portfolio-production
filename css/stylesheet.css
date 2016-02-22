@@ -82,9 +82,9 @@ html, body {
 }
 
 .top__credit {
-    position: fixed;
+    position: absolute;
     bottom: 20px;
-    left: 45px;
+    right: 45px;
     font-size: 1.5rem;
     font-family: Abel, sans-serif;
 }
@@ -178,7 +178,7 @@ html, body {
 
 .list-group {
     font-family: Abel, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
 }
 
 .list-group-item {
@@ -194,7 +194,7 @@ html, body {
 
 .panel-body {
     font-family: Abel, sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     color: #1a2930;
     
 }
@@ -225,7 +225,29 @@ html, body {
     color: #032b2f;
 }
 
+.footer {
+    background-color: #032b2f;
+    height: 4rem;
+}
 
+.footer__area {
+    text-align: center;
+    color: #d0d3c5;
+    margin: 1rem 0;
+}
 
+.footer__area-text {
+    font-family: Halant, serif;
+}
 
-
+/*small screen media query*/
+@media (max-width: 768px) {
+    .header__nav {
+        margin: 1rem 0;
+        position: absolute;
+        top: 20px;
+    }
+    .top__welcome-text {
+        font-size: 4.5rem;
+    }
+}

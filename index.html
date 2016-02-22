@@ -43,15 +43,15 @@
 <!--  main area left = intro right = text   -->
   <section class="container-fluid main">
       <div class="row main__container">
-           <div class="col-md-6 intro">
+<!--  The intro section headshot, welcome         -->
+             <div class="col-md-6 intro">
               <h1 class="intro__title">Hello </h1>
               <div class="intro__headshot">
                   <img class="intro__headshot-img img-circle" src="../images/AJB-Headshot.jpg" alt="headshot">
               </div>
               <div class="intro__text">I'm Adam, a web developer based in West Hartford, CT.</div>
              </div>
-              
-<!-- @media for small screens to increase the padding-bottom for .content -->
+<!--All the content, about, skills, portfolio    -->
            <div class="col-md-6 content">
                <div class="about">
                    <h3 class="about__title">
@@ -66,32 +66,32 @@
                        Skills
                    </h3>
                </div>               
-               <div class="panel panel-default skills__list-head">
+               <div class="panel panel-default ">
                   <!-- Default panel contents -->
-                  <div class="panel-heading">Development Skills  - Beginning</div>
+                  <div class="panel-heading skills__list-head">Development Skills  - Beginning</div>
                   <ul class="list-group">
                     <li class="list-group-item skills__list-item">Bootstrap3</li>
-                    <li class="list-group-item">JavaScript</li>
-                    <li class="list-group-item">GitHub</li>
+                    <li class="list-group-item skills__list-item">JavaScript</li>
+                    <li class="list-group-item skills__list-item">GitHub</li>
                   </ul>
               </div>
               <div class="panel panel-default">
                   <!-- Default panel contents -->
-                  <div class="panel-heading">Development Skills - Intermediate</div>
+                  <div class="panel-heading skills__list-head">Development Skills - Intermediate</div>
                   <ul class="list-group">
-                    <li class="list-group-item">HTML5</li>
-                    <li class="list-group-item">CSS3</li>
-                    <li class="list-group-item">BEM</li>
-                    <li class="list-group-item">jQuery</li>
+                    <li class="list-group-item skills__list-item">HTML5</li>
+                    <li class="list-group-item skills__list-item">CSS3</li>
+                    <li class="list-group-item skills__list-item">BEM</li>
+                    <li class="list-group-item skills__list-item">jQuery</li>
                   </ul>
               </div>
               <div class="panel panel-default">
                   <!-- Default panel contents -->
-                  <div class="panel-heading">Music Technology Skills</div>
+                  <div class="panel-heading skills__list-head">Music Technology Skills</div>
                   <ul class="list-group">
-                    <li class="list-group-item">Max7</li>
-                    <li class="list-group-item">Max for Live</li>
-                    <li class="list-group-item">Ableton Live</li>
+                    <li class="list-group-item skills__list-item">Max7</li>
+                    <li class="list-group-item skills__list-item">Max for Live</li>
+                    <li class="list-group-item skills__list-item">Ableton Live</li>
                   </ul>
               </div>
                <div class="portfolio">
@@ -113,6 +113,9 @@
                             This was my introduction to both Thinkful and HTML/CSS. The goal was to create an <a href="http://codepen.io/adamjberkowitz/pen/obowjJ" target="_blank" class="about__text-link">"About me"</a> page on CodePen based on a template. Since I had never done anything in HTML or CSS before, it was a big challenge for me. However I after getting help from my mentor, on Slack, and Google, I was able to complete it easily.<br><br>
                             Languages: HTML and CSS 
                           </div>
+                          <div class="portfolio__image">
+                              <img src="../images/codepen-screenshot.jpg" alt="CodePen" class="img-responsive">
+                          </div>
                         </div>
                       </div>
                       <div class="panel panel-default">
@@ -128,6 +131,9 @@
                             This project demonstrates how I was able to expand my skills in order to make a copy of <a href="http://thinkful-ed.github.io/karma-clone/" target="_blank" class="about__text-link">Karma's old landing page</a>. I think <a href="http://aberkow.github.io/karma-landing-clone/" target="_blank" class="about__text-link">my version</a> is <em>extremely close</em> to the original. This challenged me to think about how a webpage is first wireframed and divided into different sections. From there, I worked on each section one at a time first organizing the HTML then applying the CSS. This project also helped me develop a better understanding of Chrome's dev tools and Git/Github. By the end of this project I understood much more about how websites can be organized, tested, and built.<br><br>
                             Languages and skills: HTML, CSS, Chrome Dev Tools, Git/Github
                             </div>
+                            <div class="portfolio__image">
+                              <img src="../images/karma-screenshot.jpg" alt="Karma" class="img-responsive">
+                          </div>
                         </div>
                       </div>
                       <div class="panel panel-default">
@@ -143,20 +149,26 @@
                             In <a href="http://aberkow.github.io/jquery-streetfighter/" target="_blank" class="about__text-link">this project</a> I learned how to implement jQuery to add functionality to a website. This project introduced basic programming logic to show and hide images. It also introduced CSS animation.<br><br>
                             Languages: HTML, CSS, jQuery
                           </div>
+                          <div class="portfolio__image">
+                              <img src="../images/streetfighter-screenshot.jpg" alt="Streetfighter" class="img-responsive">
+                          </div>
                         </div>
                       </div>
                       <div class="panel panel-default">
-                        <div class="panel-heading" role="tab" id="headingThree">
+                        <div class="panel-heading" role="tab" id="headingFour">
                           <h4 class="panel-title">
-                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseThree">
+                            <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
                               Shopping List
                             </a>
                           </h4>
                         </div>
-                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+                        <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
                           <div class="panel-body">
                             <a href="http://aberkow.github.io/shopping-list/" target="_blank" class="about__text-link">This project</a> was the most challenging so far. It wrapped together everything I knew about HTML, CSS, and jQuery. The first challenge was adding items to the list. After that, they needed the ability to be "checked off" and deleted. I completed the basic requirements and wanted to go a little further. After doing a little research I was able to sort the list items automatically <em>and</em> by dragging.<br><br>
                             Languages: HTML, CSS, jQuery, jQueryUI
+                          </div>
+                          <div class="portfolio__image">
+                              <img src="../images/shopping-list-screenshot.jpg" alt="List" class="img-responsive">
                           </div>
                         </div>
                       </div>
@@ -164,10 +176,14 @@
                 </div>
               </div>
            </div>
-  </section>
-<!--add section on languages/skills known-->
-   
-   <!--Add footer-->
+        </section>
+     
+     <!--Add footer-->
+     <section class="container-fluid footer">
+         <div class="footer__area">
+             <p class="footer__area-text">Thanks for visiting! - Adam</p>
+         </div>
+     </section>
     <script src="http://code.jquery.com/jquery.min.js"></script>     
     <script src="../js/bootstrap.min.js"></script>
     <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>  -->
