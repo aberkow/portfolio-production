@@ -49,16 +49,16 @@ module.exports = function(grunt) {
       }
     },
     sass: {
-        dist: {
-            files: [{
-                expand: true,
-                cwd: 'styles',
-                src: ['*.scss'],
-                dest: 'public',
-                ext: '.css'
-      }]
+      dist: {
+        files: [{
+            expand: true,
+            cwd: 'styles',
+            src: ['*.scss'],
+            dest: 'public',
+            ext: '.css'
+          }]
+      }
     }
-  }
   };
 
   grunt.initConfig(initConfig);
@@ -67,6 +67,7 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-copy');
   grunt.loadNpmTasks('grunt-svgstore');
   grunt.loadNpmTasks('grunt-contrib-sass');
+  grunt.loadNpmTasks('grunt-contrib-clean');
 
   grunt.registerTask('prebuild', ['bower', 'copy', 'svgstore']);
   
