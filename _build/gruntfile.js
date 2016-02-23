@@ -58,7 +58,8 @@ module.exports = function(grunt) {
             ext: '.css'
           }]
       }
-    }
+    },
+      clean: ['./lib']  
   };
 
   grunt.initConfig(initConfig);
