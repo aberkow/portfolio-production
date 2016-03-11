@@ -245,6 +245,11 @@ html, body {
     font-family: Halant, serif;
 }
 
+.icon {
+    height: 2rem;
+    fill: blue;    
+}
+
 /*small screen media query*/
 @media (max-width: 768px) {
     .header__nav {
