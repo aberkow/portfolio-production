@@ -102,11 +102,15 @@ html, body {
     height: 100%;
 }
 
+.content {
+    background-color: #d0d3c5;
+}
 
-
+/*
 .intro, .content {
     background-color: #d0d3c5;
 }
+*/
 
 .intro__title {
     padding-top: 4rem;
