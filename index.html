@@ -52,28 +52,41 @@
   
 <!--  main area left = intro right = text   -->
   <section class="container-fluid main">
-      <div class="row main__container">
+<!--      <div class="row main__container">-->
 
 <!--All the content, about, skills, portfolio    -->
-           <div class="col-md-12 content">
-               <div class="about">
+<!--           <div class="col-md-12 content">-->
+               <div class="col-md-6 about">
                    <h3 class="about__title">
                        About Me
                    </h3>
                    <p class="about__text">
-                       I'm a web developer in in West Hartford CT, where I have been a professional clarinetist and teacher at the University of Hartford's <a href="http://harttweb.hartford.edu/community/default.aspx" target="_blank" class="about__text-link">Hartt Community Division</a> for the last eight years. I believe that my skills as a musician (attention to detail, willingness to experiment, devotion to practicing a craft) will help me succeed on this new path. When I'm not coding or practicing, my family is the major influence on my life. My wife and I have two sons one of whom has <a href="https://fragilex.org/fragile-x/fragile-x-syndrome/" target="_blank" class="about__text-link">Fragile X Syndrome</a> (FXS) and the other is a carrier. You can learn a lot more about FXS by taking the quiz I developed in JavaScript. <br><br> 
+                       For the last eight years I have been a professional clarinetist and teacher at the University of Hartford's <a href="http://harttweb.hartford.edu/community/default.aspx" target="_blank" class="about__text-link">Hartt Community Division</a>. In my new career as a web developer I believe that my skills as a musician (attention to detail, willingness to experiment, devotion to practicing a craft) will help me succeed on this new path. When I'm not coding or practicing, my family is the major influence on my life. My wife and I have two sons one of whom has <a href="https://fragilex.org/fragile-x/fragile-x-syndrome/" target="_blank" class="text__link">Fragile X Syndrome</a> (FXS) and the other is a carrier. You can learn a lot more about FXS by taking the quiz I developed in JavaScript. <br><br> 
                        My current goals as a developer are to learn as much as I can both about music and the web as well as accessibility for people with special needs. It is my hope that this way I can combine these important aspects of my life with technology and coding.
                    </p>
                </div>
-              <div class="container-fluid"> 
-              <div class="row skills__container">
-              <div class="skills">
-                   <h3 class="skills__title">
-                       Skills
+               <div class="col-md-6 current">
+                 <div class="current__project">
+                   <h3 class="current__project-title">
+                     Current Project
                    </h3>
-               </div>               
-              <div class="col-md-8"> 
-                <div class="panel panel-default ">
+                  <p class="current__project-text">
+                    Right now, I'm excited to work on a project with <a href="http://tonejs.org" target="_blank" class="text__link">Tone.JS</a> and the Google Maps API. My goal is to turn data collected from API calls into sound! I will post updates as I go. 
+                  </p>
+                  </div>
+               </div>
+              <div class="container-fluid"> 
+                <div class="row skills__container">
+                  <div class="col-md-12">
+                    <div class="skills">
+                     <h3 class="skills__title">
+                         Skills
+                     </h3>
+                     </div>               
+                  </div>
+               <div class="col-md-8"> 
+                
+                 <div class="panel panel-default ">
                     <!-- Default panel contents -->
                     <div class="panel-heading skills__list-head">Development</div>
                     <ul class="list-group">
@@ -217,16 +230,23 @@
                       </div>
                   </div>
                 </div>
-              </div>
-           </div>
+<!--              </div>-->
+<!--           </div>-->
         </section>
      
      <!--Add footer-->
-     <section class="container-fluid footer">
-         <div class="footer__area">
+     <footer class="container-fluid footer">
+       <div class="footer__area">
              <p class="footer__area-text">Thanks for visiting! - Adam</p>
          </div>
-     </section>
+     </footer>
+        
+        
+<!--
+        <div class="container-fluid footer">
+         
+     </div>
+-->
     <script src="http://code.jquery.com/jquery.min.js"></script>     
     <script src="../js/bootstrap.min.js"></script>
     <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>  -->
