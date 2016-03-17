@@ -206,6 +206,13 @@ html, body {
     display: inline-block;
 }
 
+
+.thumbnail__image {
+  height: 345px;
+  width: 413px;
+}
+
+
 .panel {
     background-color: #d0d3c5;
     border: 1px solid #d0d3c5;
