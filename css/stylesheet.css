@@ -7,11 +7,13 @@ Hunter - #032b2f;
 */
 
 * {
-    //border: 1px red solid;       
+    //border: 1px red solid;  
+  padding: 0;     
 }
 
 html, body {
     height: 100%;
+    
 }
 
 .top {
@@ -25,8 +27,6 @@ html, body {
 
 .header__nav {
     margin: 1rem 0;
-    position: fixed;
-    z-index: 100;
 }
 
 .header__nav-list {
@@ -68,6 +68,7 @@ html, body {
     margin-top: 6rem;
 }
 
+/*
 .btn-lg {
     font-family: Abel, sans-serif;
     font-size: 2rem;
@@ -81,7 +82,8 @@ html, body {
     color: #d0d3c5;
     border: 1px solid #08708a;
 }
-
+*/
+/*Hide the unsplash credit on scroll*/
 .top__credit {
     position: absolute;
     bottom: 20px;
@@ -95,28 +97,9 @@ html, body {
     text-decoration: none;
 }
 
-
-/*Hide unsplash link everywhere except top. Or put in footer? Make the .content area scroll and leave the .intro alone.*/
-
-.main {
-  height: 100%;
+.main, .content {
+  background-color: #d0d3c5;
 }
-
-/*
-.main, .main__container, .intro, .content {
-    height: 100%;
-}
-*/
-
-.content {
-    background-color: #d0d3c5;
-}
-
-/*
-.intro, .content {
-    background-color: #d0d3c5;
-}
-*/
 
 .intro__title {
     padding-top: 4rem;
@@ -146,18 +129,6 @@ html, body {
     font-size: 4rem;
     font-family: Halant, serif;
 }
-
-/*
-.main {
-  overflow: visible;
-}
-*/
-
-/*
-.content {
-    overflow-y: hidden;
-}
-*/
 
 .about, .current__project {
     padding-top: 4rem;
@@ -220,30 +191,57 @@ html, body {
     
 }
 
+
 .panel-default > .panel-heading {
     background-color: #56b1bf;
+    border: 1px solid #56b1bf;
 }
 
-.panel-default > .panel-heading:hover {
+.thumbnail {
+  background-color: #d0d3c5;
+  border: 1px solid #d0d3c5;
+}
+
+.thumbnail__title {
+  font-family: Halant, serif;
+  font-size: 3rem;
+}
+
+.thumbnail__text {
+  font-family: Abel, sans-serif;
+  font: 2rem;
+}
+
+.thumbnail__btn, .modal__btn {
+    font-family: Abel, sans-serif;
+    font-size: 2rem;
+    background-color: #032b2f;
+    color: #d0d3c5;
+    border: 1px solid #032b2f;
+}
+
+.thumbnail__btn:hover, .modal__btn:hover {
     background-color: #08708a;
+    color: #d0d3c5;
+    border: 1px solid #08708a;
 }
 
-.panel-title a {
-    text-decoration: none;
-    font-family: Abel, sans-serif;
-    font-size: 2rem;
-    color: #032b2f;
+.modal-header, .modal-body, .modal-footer{
+  background-color: #032b2f;
+  color: #d0d3c5;
+  border-top: 1px solid #032b2f;
+  border-bottom: 1px solid #032b2f;
 }
 
-.panel-title:hover {
-    color: #0a1612;
+.modal-header {
+  font-family: Halant, serif;
+  font-size: 3rem;
 }
 
-.panel-title a:hover {
-    text-decoration: none;
-    font-family: Abel, sans-serif;
-    font-size: 2rem;
-    color: #032b2f;
+.modal-body, .modal-footer {
+  font-family: Abel, sans-serif;
+  font-size: 1.65rem;
+  line-height: 140%;
 }
 
 .footer {
