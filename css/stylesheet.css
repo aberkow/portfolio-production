@@ -6,6 +6,8 @@ Tomato - #d73a31;
 Hunter - #032b2f;
 */
 
+/*add paralax effect for bg image*/
+
 * {
     //border: 1px red solid;  
   padding: 0;     
@@ -263,6 +265,11 @@ html, body {
 .footer__nav-icons > a:hover {
     color: #032b2f;
     cursor: pointer;
+}
+
+.icon {
+    height: 2rem;
+    fill: blue;    
 }
 
 /*small screen media query*/
