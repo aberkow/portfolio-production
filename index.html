@@ -36,7 +36,7 @@
         <div class="intro__headshot">
             <img class="intro__headshot-img img-circle" src="./images/AJB-Headshot.jpg" alt="headshot">
         </div>
-        <div class="intro__text">I'm Adam, a web developer based in West Hartford, CT.</div>
+        <div class="intro__text">I&rsquo;m Adam, a web developer based in West Hartford, CT.</div>
 <!--       <div class="intro__arrow"><i class="fa fa-arrow-circle-down fa-2x"></i></div>-->
        </div>
      
@@ -168,7 +168,16 @@
                   </div>
               </div>
             <!--Example 5              -->
-     
+             <div class="col-sm-6 col-md-3">
+                  <div class="thumbnail">
+                    <img src="./images/maps-to-music-screenshot.jpg" alt="Maps to Music" class="img-responsive">
+                    <div class="caption">
+                      <h3 class="thumbnail__title">Maps to Music</h3>
+                        <p class="thumbnail__text">JavaScript, jQuery, Leaflet JS, Tone JS</p>
+                          <p><a href="#" class="btn btn-primary thumbnail__btn" role="button" data-toggle="modal" data-target="#modal5">Read More</a> </p>
+                    </div>
+                  </div>
+              </div>
             <!--  Example 6            -->
 
             </div>
@@ -246,7 +255,25 @@
                 </div>
               </div>
             </div> 
-      
+        <!-- Modal 5     -->
+            <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h4 class="modal-title" id="myModalLabel">Maps to Music</h4>
+                  </div>
+                <div class="modal-body">
+                <p class="modal__text">
+                Data can be represented in many different ways. Many times this data is in images like charts, graphs, or infographics. But that is not the only way to experience information. Another way is through sonification which turns data into sound.<br /><br />This project turns the route from one city to the next into sound. The latitude and longitude are passed into a synthesizer created with <a href="http://tonejs.org/examples/" target="_blank" class="text__link">Tone.JS</a>. They are played back as a "melody" at 1,000th of the time it would take to make the actual trip. 
+                </p>
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-default modal__btn"><a href="http://aberkow.github.io/maps-to-music" target="_blank" class="modal__link">Visit Project</a></button>
+                  <button type="button" class="btn btn-primary modal__btn" data-dismiss="modal">Close</button>
+                </div>
+                </div>
+              </div>
+            </div>
 <!-- footer       -->
         <footer class="container-fluid footer">
            <div class="footer__area">
