@@ -88,7 +88,7 @@ html, body {
 }
 
 .intro__title {
-    padding-top: 4rem;
+    margin-top: 4rem;
     margin-top: 0;
     margin-bottom: 4rem;
     text-align: center;
@@ -277,8 +277,12 @@ html, body {
     .header__nav {
         margin: 1rem 0;
         position: absolute;
-        top: 20px;
+        top: 5px;
     }
+  .intro__title {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
     .top__welcome-text {
         font-size: 4.5rem;
     }
