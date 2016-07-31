@@ -64,8 +64,22 @@
                      Current Project
                    </h3>
                   <p class="current__project-text">
-                    Right now, I'm excited to work on a project with <a href="http://tonejs.org" target="_blank" class="text__link">Tone.JS</a> and the Google Maps API. My goal is to turn data collected from API calls into sound! I will post updates as I go.
-                  </p>
+                    Recently I completed a daily student report sheet modeled after one my son has been getting from school. It includes areas for: </p>
+                    <ul>
+                      <li>Name/Date/Fact of the day</li>
+                      <li>Student's mood for the day</li>
+                      <li>Sepcial Ed. Services</li>
+                      <li>School work/notes and</li>
+                      <li>Reinforcers (as part of his behavioral therapy)</li>
+                    </ul>
+                  <p class="current__project-text">I started building it just with React (which is fantastic to work with!). Once I had most of it figured out, I incorportated Redux to manage the state for the application. This way I was able to easily do things like:</p>
+                  <ul>
+                    <li>Have the student's name appear in several places on the page automatically</li>
+                    <li>Link the student's mood for the day to an icon</li>
+                    <li>Make an API call to get a fact for the day and</li>
+                    <li>Easily handle arrays of services and list items</li>
+                  </ul>
+                  <p class="current__project-text">The project's not currently hooked up to a server or database. However, with the state management built in already and Axios in-place for the API call, adding that aspect would not be difficult.</p>
                   </div>
                </div>
               <div class="container-fluid">
@@ -118,28 +132,6 @@
           <h3 class="portfolio__title">Portfolio</h3>
             <div class="row portfolio__row">
               <!-- Example 1             -->
-               <!-- <div class="col-sm-6 col-md-3">
-                  <div class="thumbnail">
-                    <img src="./images/karma-screenshot.jpg" alt="Website clone" class="img-responsive">
-                    <div class="caption">
-                      <h3 class="thumbnail__title">Karma Clone</h3>
-                        <p class="thumbnail__text">Skills: HTML5, CSS3</p>
-                        <p><a href="#" class="btn btn-primary thumbnail__btn" role="button" data-toggle="modal" data-target="#modal1">Read More</a> </p>
-                    </div>
-                  </div>
-              </div> -->
-              <!--  Example 2             -->
-               <!-- <div class="col-sm-6 col-md-3">
-                  <div class="thumbnail">
-                    <img src="./images/shopping-list-screenshot.jpg" alt="Shopping List" class="img-responsive">
-                    <div class="caption">
-                      <h3 class="thumbnail__title">Shopping List</h3>
-                        <p class="thumbnail__text">Skills: HTML5, CSS3, jQuery, JavaScript</p>
-                          <p><a href="#" class="btn btn-primary thumbnail__btn" role="button" data-toggle="modal" data-target="#modal2">Read More</a> </p>
-                    </div>
-                  </div>
-              </div> -->
-
 
             <!--  Example 3          -->
             <div class="col-sm-6 col-md-3">
@@ -210,47 +202,6 @@
             </div>
 
 
-          <!--  Modal 1          -->
-           <!-- <div class="modal fade" id="modal1" tabindex="-1" role="dialog" aria-labelledby="modal1Label">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Karma Clone</h4>
-
-                  </div>
-                <div class="modal-body">
-                <p class="modal__text">This project demonstrates how I was able to expand my skills in order to make a copy of <a href="http://thinkful-ed.github.io/karma-clone/" target="_blank" class="about__text-link">Karma's old landing page</a>. I think <a href="http://aberkow.github.io/karma-landing-clone/" target="_blank" class="text__link">my version</a> is <em>extremely close</em> to the original. This challenged me to think about how a webpage is first wireframed and divided into different sections. From there, I worked on each section one at a time first organizing the HTML then applying the CSS. This project also helped me develop a better understanding of Chrome's dev tools and Git/Github. By the end of this project I understood much more about how websites can be organized, tested, and built.<br><br>
-                Languages and skills: HTML, CSS, Chrome Dev Tools, Git/Github</p>
-                </div>
-                <div class="modal-footer">
-
-                 <a href="http://aberkow.github.io/karma-landing-clone/" target="_blank" class="btn btn-default modal__btn">Visit Project</a>
-                  <button type="button" class="btn btn-primary modal__btn" data-dismiss="modal">Close</button>
-                </div>
-                </div>
-              </div>
-            </div>  -->
-
-          <!-- Modal 2  -->
-           <!-- <div class="modal fade" id="modal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Shopping List</h4>
-                  </div>
-                <div class="modal-body">
-                <p class="modal__text"><a href="http://aberkow.github.io/shopping-list/" target="_blank" class="text__link">This project</a> was the most challenging so far. It wrapped together everything I knew about HTML, CSS, and jQuery. The first challenge was adding items to the list. After that, they needed the ability to be "checked off" and deleted. I completed the basic requirements and wanted to go a little further. After doing a little research I was able to sort the list items automatically <em>and</em> by dragging.<br><br>
-                Languages: HTML, CSS, jQuery, jQueryUI</p>
-                </div>
-                <div class="modal-footer">
-
-                 <a href="http://aberkow.github.io/shopping-list" target="_blank" class="btn btn-default modal__btn">Visit Project</a>
-                  <button type="button" class="btn btn-primary modal__btn" data-dismiss="modal">Close</button>
-                </div>
-                </div>
-              </div>
-            </div> -->
-          <!--  Modal 3            -->
           <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
               <div class="modal-dialog" role="document">
                 <div class="modal-content">
