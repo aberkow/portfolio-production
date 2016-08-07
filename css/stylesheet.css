@@ -9,13 +9,13 @@ Hunter - #032b2f;
 /*add paralax effect for bg image*/
 
 * {
-    //border: 1px red solid;  
-  padding: 0;     
+    //border: 1px red solid;
+  padding: 0;
 }
 
 html, body {
     height: 100%;
-    
+
 }
 
 .top {
@@ -55,7 +55,7 @@ html, body {
 }
 
 .top__welcome {
-    text-align: center; 
+    text-align: center;
     color: #032b2f;
 }
 
@@ -94,7 +94,7 @@ html, body {
     text-align: center;
     color: #032b2f;
     font-family: Halant, serif;
-    font-size: 8rem;    
+    font-size: 8rem;
 }
 
 .intro__headshot {
@@ -116,8 +116,8 @@ html, body {
     font-family: Halant, serif;
 }
 
-.about, .current__project {
-    padding-top: 4rem;
+.about, .current {
+  padding: 4rem 3rem 0;
 }
 
 .about__title, .current__project-title, .skills__title, .portfolio__title {
@@ -175,7 +175,7 @@ html, body {
     font-family: Abel, sans-serif;
     font-size: 1.75rem;
     color: #1a2930;
-    
+
 }
 
 
@@ -244,7 +244,7 @@ html, body {
 .footer {
     background-color: #08708a;
     height: 10rem;
-  
+
 }
 
 .footer__area {
@@ -269,7 +269,7 @@ html, body {
 
 .icon {
     height: 2rem;
-    fill: blue;    
+    fill: blue;
 }
 
 /*small screen media query*/
