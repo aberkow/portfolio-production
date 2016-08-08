@@ -66,6 +66,29 @@ copy = {
       .pipe(gulp.dest('./build'))
   }
 }
+
+utils = {
+  html: function(){
+    return gulp.src('index.html')
+      .pipe(miniHTML())
+      .pipe(gulp.dest('build/'))
+  },
+  jshint: function(){
+    return gulp.src('js/*.js')
+      .pipe(jshint())
+      .pipe(jshint.reporter('jshint-stylish'))
+  },
+  sass: function(){
+    return gulp.src('scss/*.scss')
+      .pipe(sass())
+      .pipe(gulp.dest('css'));
+  },
+  watch: function(){
+    gulp.watch('js/*.js', ['jshint']);
+    gulp.watch('scss/*.scss', ['sass']);
+  }
+}
+
 //cleaning tasks
 gulp.task('cleanCSS', clean.cleanCSS);
 gulp.task('cleanImages', clean.cleanImages);
@@ -83,3 +106,9 @@ gulp.task('copyRoot', copy.copyRoot);
 gulp.task('copyAll', function(cb){
   sequence('copyCSS', 'copyImages', 'copyJs', 'copyRoot', cb);
 });
+
+//utilities
+gulp.task('miniHTML', utils.miniHTML);
+gulp.task('jshint', utils.jshint);
+gulp.task('sass', utils.sass);
+gulp.task('watch', utils.watch);

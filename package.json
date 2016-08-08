@@ -28,6 +28,7 @@
     "gulp-sequence": "^0.4.5",
     "gulp-uglify": "^2.0.0",
     "gulp-watch": "^4.3.9",
-    "jshint": "^2.9.2"
+    "jshint": "^2.9.2",
+    "jshint-stylish": "^2.2.0"
   }
 }
