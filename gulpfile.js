@@ -128,4 +128,5 @@ gulp.task('jshint', utils.jshint);
 gulp.task('sass', utils.sass);
 gulp.task('styles', utils.styles);
 gulp.task('watch', utils.watch);
+gulp.task('buildStyles', ['sass', 'styles', 'watch']);
 gulp.task('default', ['jshint', 'sass', 'watch']);

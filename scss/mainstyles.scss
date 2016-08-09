@@ -1,10 +1,10 @@
-$mainColor: white;
+$mainColor: #f5f5f5;
 $secondaryColor: #032b2f;
 $highlightColor: #00e7ff;
 $fontColor: #032b2f;
 $secondaryFontColor: #f5f5f5;
 $specialFontColor: #00e7ff;
-$linkColor: ;
+$linkColor: #ff6C00;
 
 //media query variables
 $phone: 'min-width: 375px';
@@ -32,20 +32,6 @@ $sansFont: 'Abel', sans-serif;
 
 * {
   box-sizing: border-box;
-}
-
-/*
-Stone wash - #d0d3c5;
-cerulean - #56b1bf;
-Teal - #08708a;
-Tomato - #d73a31;
-Hunter - #032b2f;
-*/
-
-/*add paralax effect for bg image*/
-
-* {
-    //border: 1px red solid;
   padding: 0;
 }
 
@@ -62,12 +48,26 @@ html, body {
   background-blend-mode: overlay;
 }
 
-.header__nav {
-  margin: 1rem 0;
+.navbar, .navbar-default {
+  background-color: $mainColor;
+  border: 1px solid $mainColor;
 }
 
-.header__nav-list {
-  margin: 0;
+.navbar-toggle {
+  .toggle__text {
+    color: $fontColor;
+    font-size: 1.5rem;
+    font-family: $sansFont;
+  }
+}
+
+.navbar .nav li a.navbar__links-item {
+  color: $fontColor;
+  font-family: $sansFont;
+  font-size: 1.5rem;
+  &:hover {
+    color: $specialFontColor;
+  }
 }
 
 .header__nav-icons, .footer__nav-icons {
@@ -79,38 +79,9 @@ html, body {
     padding-left: 0.5rem;
 }
 
-.header__nav-link {
-  color: $fontColor;
-  &:hover {
-    color: shade($specialFontColor, 15%);
-    cursor: pointer;
-  }
-}
-
-// .header__nav-icons > a {
-//     color: $fontColor;
-// }
-
-// .header__nav-icons > a:hover {
-//     color: shade($specialFontColor, 15%);
-//
-//     cursor: pointer;
-// }
-
-.top__welcome {
-  text-align: center;
-  color: #032b2f;
-}
-
-.top__welcome-text {
-  margin-top: 20rem;
-  font-family: $serifFont;
-  font-size: 5rem;
-}
-
 /*Hide the unsplash credit on scroll*/
 .top__credit {
-  color: white;
+  color: $mainColor;
   position: absolute;
   bottom: 20px;
   right: 45px;
@@ -119,7 +90,7 @@ html, body {
 }
 
 .top__credit a {
-  color: shade($specialFontColor, 70%);
+  color: $linkColor;
   text-decoration: none;
 }
 
@@ -133,9 +104,23 @@ html, body {
 
 .intro {
   @include centerer;
+  text-align: center;
 }
 
 .intro__title {
+
+  font-family: $serifFont;
+  font-size: 4rem;
+  margin-top: 6rem;
+  margin-bottom: 0;
+  color: #032b2f;
+  @media screen and ($tablet){
+    font-size: 7rem;
+  }
+  @media screen and ($desktop){
+    font-size: 10rem;
+  }
+  /*
   margin-top: 4rem;
   margin-top: 0;
   margin-bottom: 0rem;
@@ -143,13 +128,15 @@ html, body {
   color: #032b2f;
   font-family: $serifFont;
   font-size: 8rem;
+  */
 }
 
 .intro__headshot {
+  margin-top: 1rem;
   text-align: center;
   transform: rotate(-13deg);
-  width: 16rem;
-  margin: auto;
+  //width: 16rem;
+  //margin: auto;
 }
 
 .intro__headshot-img {
@@ -157,12 +144,20 @@ html, body {
 }
 
 .intro__text {
+  font-size: 2rem;
+  font-family: $serifFont;
+  color: #032b2f;
+  @media screen and ($tablet){
+    font-size: 3rem;
+  }
+  /*
   text-align: center;
   margin-bottom: 1rem;
   //margin: 4rem 2rem;
   color: #032b2f;
   font-size: 4rem;
   font-family: $serifFont;
+  */
 }
 
 .about, .current {
@@ -186,9 +181,9 @@ html, body {
 }
 
 .text__link {
-  color: #d73a31;
+  color: $linkColor;
   &:hover {
-    color: shade($specialFontColor, 70%);
+    color: shade($linkColor, 70%);
   }
 }
 
@@ -260,9 +255,9 @@ html, body {
 }
 
 .thumbnail__btn:hover, .modal__btn:hover {
-  background-color: $specialFontColor;
+  background-color: $linkColor;
   //color: #d0d3c5;
-  border: 1px solid $specialFontColor;
+  border: 1px solid $linkColor;
 }
 
 .modal-header, .modal-body, .modal-footer{
@@ -324,17 +319,17 @@ html, body {
 }
 
 /*small screen media query*/
-@media (max-width: 768px) {
-    .header__nav {
-        margin: 1rem 0;
-        position: absolute;
-        top: 5px;
-    }
-  .intro__title {
-    margin-top: 5rem;
-    margin-bottom: 3rem;
-  }
-    .top__welcome-text {
-        font-size: 4.5rem;
-    }
-}
+// @media (max-width: 768px) {
+//     .header__nav {
+//         margin: 1rem 0;
+//         position: absolute;
+//         top: 5px;
+//     }
+//   .intro__title {
+//     margin-top: 5rem;
+//     margin-bottom: 3rem;
+//   }
+//     .top__welcome-text {
+//         font-size: 4.5rem;
+//     }
+// }

@@ -1,15 +1,5 @@
 * {
-  box-sizing: border-box; }
-
-/*
-Stone wash - #d0d3c5;
-cerulean - #56b1bf;
-Teal - #08708a;
-Tomato - #d73a31;
-Hunter - #032b2f;
-*/
-/*add paralax effect for bg image*/
-* {
+  box-sizing: border-box;
   padding: 0; }
 
 html, body {
@@ -17,17 +7,27 @@ html, body {
 
 .top {
   height: 100%;
-  background-color: rgba(255, 255, 255, 0);
+  background-color: rgba(245, 245, 245, 0);
   background-image: url(../images/laptop.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: overlay; }
 
-.header__nav {
-  margin: 1rem 0; }
+.navbar, .navbar-default {
+  background-color: #f5f5f5;
+  border: 1px solid #f5f5f5; }
 
-.header__nav-list {
-  margin: 0; }
+.navbar-toggle .toggle__text {
+  color: #032b2f;
+  font-size: 1.5rem;
+  font-family: "Abel", sans-serif; }
+
+.navbar .nav li a.navbar__links-item {
+  color: #032b2f;
+  font-family: "Abel", sans-serif;
+  font-size: 1.5rem; }
+  .navbar .nav li a.navbar__links-item:hover {
+    color: #00e7ff; }
 
 .header__nav-icons, .footer__nav-icons {
   display: inline-block;
@@ -36,24 +36,9 @@ html, body {
 .fa-linkedin-square, .fa-facebook-square, .fa-twitter-square, .fa-envelope {
   padding-left: 0.5rem; }
 
-.header__nav-link {
-  color: #032b2f; }
-  .header__nav-link:hover {
-    color: #00c4d9;
-    cursor: pointer; }
-
-.top__welcome {
-  text-align: center;
-  color: #032b2f; }
-
-.top__welcome-text {
-  margin-top: 20rem;
-  font-family: "Halant", serif;
-  font-size: 5rem; }
-
 /*Hide the unsplash credit on scroll*/
 .top__credit {
-  color: white;
+  color: #f5f5f5;
   position: absolute;
   bottom: 20px;
   right: 45px;
@@ -61,45 +46,67 @@ html, body {
   font-family: "Abel", sans-serif; }
 
 .top__credit a {
-  color: #00454d;
+  color: #ff6C00;
   text-decoration: none; }
 
 .main {
   padding: 0; }
 
 .main, .content {
-  background-color: white; }
+  background-color: #f5f5f5; }
 
 .intro {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%); }
+  transform: translate(-50%, -50%);
+  text-align: center; }
 
 .intro__title {
+  font-family: "Halant", serif;
+  font-size: 4rem;
+  margin-top: 6rem;
+  margin-bottom: 0;
+  color: #032b2f;
+  /*
   margin-top: 4rem;
   margin-top: 0;
   margin-bottom: 0rem;
   text-align: center;
   color: #032b2f;
-  font-family: "Halant", serif;
-  font-size: 8rem; }
+  font-family: $serifFont;
+  font-size: 8rem;
+  */ }
+  @media screen and (min-width: 768px) {
+    .intro__title {
+      font-size: 7rem; } }
+  @media screen and (min-width: 1024px) {
+    .intro__title {
+      font-size: 10rem; } }
 
 .intro__headshot {
+  margin-top: 1rem;
   text-align: center;
-  transform: rotate(-13deg);
-  width: 16rem;
-  margin: auto; }
+  transform: rotate(-13deg); }
 
 .intro__headshot-img {
   height: 17rem; }
 
 .intro__text {
+  font-size: 2rem;
+  font-family: "Halant", serif;
+  color: #032b2f;
+  /*
   text-align: center;
   margin-bottom: 1rem;
+  //margin: 4rem 2rem;
   color: #032b2f;
   font-size: 4rem;
-  font-family: "Halant", serif; }
+  font-family: $serifFont;
+  */ }
+  @media screen and (min-width: 768px) {
+    .intro__text {
+      font-size: 3rem; } }
 
 .about, .current {
   padding: 4rem 3rem 0; }
@@ -118,9 +125,9 @@ html, body {
   color: #032b2f; }
 
 .text__link {
-  color: #d73a31; }
+  color: #ff6C00; }
   .text__link:hover {
-    color: #00454d; }
+    color: #4d2000; }
 
 .skills__list-head {
   font-family: "Abel", sans-serif;
@@ -161,8 +168,8 @@ html, body {
   border: 1px solid #032b2f; }
 
 .thumbnail__btn:hover, .modal__btn:hover {
-  background-color: #00e7ff;
-  border: 1px solid #00e7ff; }
+  background-color: #ff6C00;
+  border: 1px solid #ff6C00; }
 
 .modal-header, .modal-body, .modal-footer {
   background-color: #032b2f;
@@ -209,13 +216,3 @@ html, body {
   fill: blue; }
 
 /*small screen media query*/
-@media (max-width: 768px) {
-  .header__nav {
-    margin: 1rem 0;
-    position: absolute;
-    top: 5px; }
-  .intro__title {
-    margin-top: 5rem;
-    margin-bottom: 3rem; }
-  .top__welcome-text {
-    font-size: 4.5rem; } }
