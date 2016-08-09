@@ -1,0 +1,289 @@
+/*
+Stone wash - #d0d3c5;
+cerulean - #56b1bf;
+Teal - #08708a;
+Tomato - #d73a31;
+Hunter - #032b2f;
+*/
+
+/*add paralax effect for bg image*/
+
+* {
+    //border: 1px red solid;
+  padding: 0;
+}
+
+html, body {
+    height: 100%;
+
+}
+
+.top {
+    height: 100%;
+    background-color: #d0d3c5;
+    background-image: url(../images/laptop.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: overlay;
+}
+
+.header__nav {
+    margin: 1rem 0;
+}
+
+.header__nav-list {
+    margin: 0;
+    color: #032b2f;
+}
+
+.header__nav-icons, .footer__nav-icons {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.fa-linkedin-square, .fa-facebook-square, .fa-twitter-square, .fa-envelope {
+    padding-left: 0.5rem;
+}
+
+.header__nav-icons > a {
+    color: #d73a31;
+}
+
+.header__nav-icons > a:hover {
+    color: #032b2f;
+    cursor: pointer;
+}
+
+.top__welcome {
+    text-align: center;
+    color: #032b2f;
+}
+
+.top__welcome-text {
+    margin-top: 20rem;
+    font-family: Halant, serif;
+    font-size: 5rem;
+}
+
+/*Hide the unsplash credit on scroll*/
+.top__credit {
+    position: absolute;
+    bottom: 20px;
+    right: 45px;
+    font-size: 1.5rem;
+    font-family: Abel, sans-serif;
+}
+
+.top__credit a {
+    color: #d73a31;
+    text-decoration: none;
+}
+
+.main {
+  padding: 0;
+}
+
+.main, .content {
+  background-color: #d0d3c5;
+}
+
+.intro__title {
+    margin-top: 4rem;
+    margin-top: 0;
+    margin-bottom: 4rem;
+    text-align: center;
+    color: #032b2f;
+    font-family: Halant, serif;
+    font-size: 8rem;
+}
+
+.intro__headshot {
+    text-align: center;
+    transform: rotate(-13deg);
+    width: 16rem;
+    margin: auto;
+}
+
+.intro__headshot-img {
+    height: 17rem;
+}
+
+.intro__text {
+    text-align: center;
+    margin: 4rem 2rem;
+    color: #032b2f;
+    font-size: 4rem;
+    font-family: Halant, serif;
+}
+
+.about, .current {
+  padding: 4rem 3rem 0;
+}
+
+.about__title, .current__project-title, .skills__title, .portfolio__title {
+    font-family: Abel, sans-serif;
+    font-size: 3rem;
+    color: #032b2f;
+}
+
+.portfolio__title {
+  padding-left: 15px;
+}
+
+.about__text, .current__project-text {
+    font-family: Abel, sans-serif;
+    font-size: 2rem;
+    color: #032b2f;
+}
+
+.text__link {
+    color: #d73a31;
+}
+
+.text__link:hover {
+    text-decoration: none;
+    color: #08708a;
+}
+
+.skills__list-head {
+    font-family: Abel, sans-serif;
+    font-size: 2rem;
+    color: #032b2f;
+}
+
+.list-group {
+    font-family: Abel, sans-serif;
+    font-size: 1.75rem;
+}
+
+.list-group-item {
+    background-color: #d0d3c5;
+    border: 1px solid #d0d3c5;
+    display: inline-block;
+}
+
+.portfolio__row {
+  padding: 0 15px;
+}
+
+.panel {
+    background-color: #d0d3c5;
+    border: 1px solid #d0d3c5;
+}
+
+.panel-body {
+    font-family: Abel, sans-serif;
+    font-size: 1.75rem;
+    color: #1a2930;
+
+}
+
+
+.panel-default > .panel-heading {
+    background-color: #56b1bf;
+    border: 1px solid #56b1bf;
+}
+
+.thumbnail {
+  background-color: #d0d3c5;
+  border: 1px solid #d0d3c5;
+}
+
+.thumbnail__title {
+  font-family: Halant, serif;
+  font-size: 3rem;
+}
+
+.thumbnail__text {
+  font-family: Abel, sans-serif;
+  font: 4rem;
+}
+
+.thumbnail__btn, .modal__btn {
+    font-family: Abel, sans-serif;
+    font-size: 2rem;
+    background-color: #d73a31;
+    color: #d0d3c5;
+    border: 1px solid #d73a31;
+}
+
+.thumbnail__btn:hover, .modal__btn:hover {
+    background-color: #08708a;
+    color: #d0d3c5;
+    border: 1px solid #08708a;
+}
+
+.modal-header, .modal-body, .modal-footer{
+  background-color: #032b2f;
+  color: #d0d3c5;
+  border-top: 1px solid #032b2f;
+  border-bottom: 1px solid #032b2f;
+}
+
+.modal-header {
+  font-family: Halant, serif;
+  font-size: 3rem;
+}
+
+.modal-body, .modal-footer {
+  font-family: Abel, sans-serif;
+  font-size: 1.65rem;
+  line-height: 140%;
+}
+
+.modal__link {
+  color: #d0d3c5;
+  text-decoration: none;
+}
+
+.modal__link:hover {
+  color: #d0d3c5;
+  text-decoration: none;
+}
+
+.footer {
+    background-color: #08708a;
+    height: 10rem;
+
+}
+
+.footer__area {
+    text-align: center;
+    color: #d0d3c5;
+    margin: 1rem 0;
+}
+
+.footer__area-text {
+  font-family: Halant, serif;
+  font-size: 1.5rem;
+}
+
+.footer__nav-icons > a {
+  color: #d0d3c5;
+}
+
+.footer__nav-icons > a:hover {
+    color: #032b2f;
+    cursor: pointer;
+}
+
+.icon {
+    height: 2rem;
+    fill: blue;
+}
+
+/*small screen media query*/
+@media (max-width: 768px) {
+    .header__nav {
+        margin: 1rem 0;
+        position: absolute;
+        top: 5px;
+    }
+  .intro__title {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+  }
+    .top__welcome-text {
+        font-size: 4.5rem;
+    }
+}

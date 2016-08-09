@@ -3,6 +3,7 @@ const gulp = require('gulp');
 
 const cleanCSS = require('gulp-clean-css');
 const concat = require('gulp-concat');
+const imagemin = require('gulp-imagemin');
 const jshint = require('gulp-jshint');
 const miniHTML = require('gulp-minify-html');
 const sass = require('gulp-sass');
@@ -48,6 +49,8 @@ clean = {
   }
 }
 
+
+
 copy = {
   copyCSS: function(){
     gulp.src('./css/**/*')
@@ -71,17 +74,28 @@ utils = {
   html: function(){
     return gulp.src('index.html')
       .pipe(miniHTML())
-      .pipe(gulp.dest('build/'))
+      .pipe(gulp.dest('build/'));
+  },
+  images: function(){
+    return gulp.src('images/*')
+      .pipe(imagemin())
+      .pipe(gulp.dest('build/images'));
   },
   jshint: function(){
     return gulp.src('js/*.js')
       .pipe(jshint())
-      .pipe(jshint.reporter('jshint-stylish'))
+      .pipe(jshint.reporter('jshint-stylish'));
   },
   sass: function(){
     return gulp.src('scss/*.scss')
       .pipe(sass())
       .pipe(gulp.dest('css'));
+  },
+  styles: function(){
+    return gulp.src('css/*.css')
+      .pipe(concat('stylesheet.css'))
+      .pipe(cleanCSS())
+      .pipe(gulp.dest('build/css'));
   },
   watch: function(){
     gulp.watch('js/*.js', ['jshint']);
@@ -109,6 +123,8 @@ gulp.task('copyAll', function(cb){
 
 //utilities
 gulp.task('miniHTML', utils.miniHTML);
+gulp.task('images', utils.images);
 gulp.task('jshint', utils.jshint);
 gulp.task('sass', utils.sass);
+gulp.task('styles', utils.styles);
 gulp.task('watch', utils.watch);
