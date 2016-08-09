@@ -65,14 +65,14 @@ copy = {
       .pipe(gulp.dest('./build/js'))
   },
   copyRoot: function(){
-    gulp.src('./**/*', '!gulpfile.js', '!.gitignore')
+    gulp.src(['./**/*','!gulpfile.js', '!.gitignore', '!build', '!public', '!scss'])
       .pipe(gulp.dest('./build'))
   }
 }
 
 utils = {
   html: function(){
-    return gulp.src('index.html')
+    return gulp.src('*.html')
       .pipe(miniHTML())
       .pipe(gulp.dest('build/'));
   },

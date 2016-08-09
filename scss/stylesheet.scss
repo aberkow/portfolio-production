@@ -82,9 +82,31 @@ html, body {
   list-style-type: none;
 }
 
-.fa-linkedin-square, .fa-facebook-square, .fa-twitter-square, .fa-envelope {
-    padding-left: 0.5rem;
+.navbar-nav li.dropdown ul.dropdown-menu {
+  margin-left: -8rem;
+  background-color: rgba(0, 0, 0, 0);
 }
+
+.dropdown-menu li.header__nav-icons a.header__nav-link {
+  padding: 0;
+}
+
+//crazy long selector to get the colors just right on the social icons.
+.navbar-default .navbar-nav .open .dropdown-menu li.header__nav-icons a.header__nav-link {
+  color: $fontColor;
+  font-size: 1.5rem;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: $specialFontColor;
+  }
+  &:active {
+    color: $linkColor;
+  }
+}
+
+// .fa-linkedin-square, .fa-facebook-square, .fa-twitter-square, .fa-envelope {
+//     padding-left: 0.5rem;
+// }
 
 /*Hide the unsplash credit on scroll*/
 .top__credit {

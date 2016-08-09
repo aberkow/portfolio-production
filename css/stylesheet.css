@@ -38,8 +38,21 @@ html, body {
   display: inline-block;
   list-style-type: none; }
 
-.fa-linkedin-square, .fa-facebook-square, .fa-twitter-square, .fa-envelope {
-  padding-left: 0.5rem; }
+.navbar-nav li.dropdown ul.dropdown-menu {
+  margin-left: -8rem;
+  background-color: transparent; }
+
+.dropdown-menu li.header__nav-icons a.header__nav-link {
+  padding: 0; }
+
+.navbar-default .navbar-nav .open .dropdown-menu li.header__nav-icons a.header__nav-link {
+  color: #032b2f;
+  font-size: 1.5rem; }
+  .navbar-default .navbar-nav .open .dropdown-menu li.header__nav-icons a.header__nav-link:hover {
+    background-color: transparent;
+    color: #00e7ff; }
+  .navbar-default .navbar-nav .open .dropdown-menu li.header__nav-icons a.header__nav-link:active {
+    color: #ff6C00; }
 
 /*Hide the unsplash credit on scroll*/
 .top__credit {
