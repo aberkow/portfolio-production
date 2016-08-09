@@ -36,12 +36,11 @@ html, body {
 .fa-linkedin-square, .fa-facebook-square, .fa-twitter-square, .fa-envelope {
   padding-left: 0.5rem; }
 
-.header__nav-icons > a {
+.header__nav-link {
   color: #032b2f; }
-
-.header__nav-icons > a:hover {
-  color: #00c4d9;
-  cursor: pointer; }
+  .header__nav-link:hover {
+    color: #00c4d9;
+    cursor: pointer; }
 
 .top__welcome {
   text-align: center;
@@ -120,9 +119,8 @@ html, body {
 
 .text__link {
   color: #d73a31; }
-
-.text__link:hover {
-  color: #00454d; }
+  .text__link:hover {
+    color: #00454d; }
 
 .skills__list-head {
   font-family: "Abel", sans-serif;
