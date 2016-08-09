@@ -9,7 +9,8 @@ $linkColor: #ff6C00;
 //media query variables
 $phone: 'min-width: 375px';
 $tablet: 'min-width: 768px';
-$desktop: 'min-width: 1024px';
+$laptop: 'min-width: 1024px';
+$desktop: 'min-width: 1440px';
 
 //font families
 $serifFont: 'Halant', serif;
@@ -68,6 +69,12 @@ html, body {
   &:hover {
     color: $specialFontColor;
   }
+  &:active {
+    color: $linkColor;
+  }
+  @media screen and ($tablet){
+    font-size: 2rem;
+  }
 }
 
 .header__nav-icons, .footer__nav-icons {
@@ -98,7 +105,7 @@ html, body {
   padding: 0;
 }
 
-.main, .content {
+.main, .content, .portfolio, .contact {
   background-color: $mainColor;
 }
 
@@ -117,26 +124,15 @@ html, body {
   @media screen and ($tablet){
     font-size: 7rem;
   }
-  @media screen and ($desktop){
+  @media screen and ($laptop){
     font-size: 10rem;
   }
-  /*
-  margin-top: 4rem;
-  margin-top: 0;
-  margin-bottom: 0rem;
-  text-align: center;
-  color: #032b2f;
-  font-family: $serifFont;
-  font-size: 8rem;
-  */
 }
 
 .intro__headshot {
   margin-top: 1rem;
   text-align: center;
   transform: rotate(-13deg);
-  //width: 16rem;
-  //margin: auto;
 }
 
 .intro__headshot-img {
@@ -150,14 +146,6 @@ html, body {
   @media screen and ($tablet){
     font-size: 3rem;
   }
-  /*
-  text-align: center;
-  margin-bottom: 1rem;
-  //margin: 4rem 2rem;
-  color: #032b2f;
-  font-size: 4rem;
-  font-family: $serifFont;
-  */
 }
 
 .about, .current {
@@ -187,12 +175,6 @@ html, body {
   }
 }
 
-// .text__link:hover {
-//     // text-decoration: none;
-//
-//     color: shade($specialFontColor, 70%);
-// }
-
 .skills__list-head {
   font-family: $sansFont;
   font-size: 2rem;
@@ -205,8 +187,8 @@ html, body {
 }
 
 .list-group-item {
-  // background-color: #d0d3c5;
-  // border: 1px solid #d0d3c5;
+  background-color: $mainColor;
+  border: 1px solid $mainColor;
   display: inline-block;
 }
 
@@ -215,8 +197,8 @@ html, body {
 }
 
 .panel {
-    // background-color: #d0d3c5;
-    // border: 1px solid #d0d3c5;
+  background-color: $mainColor;
+  border: 1px solid $mainColor;
 }
 
 .panel-body {
@@ -231,62 +213,54 @@ html, body {
   border: 1px solid $highlightColor;
 }
 
-.thumbnail {
-  // background-color: #d0d3c5;
-  // border: 1px solid #d0d3c5;
+/* Portfolio Page Styles */
+
+.project {
+  margin: 0;
+  @media screen and ($tablet){
+    margin: 6rem auto;
+  }
 }
 
-.thumbnail__title {
-  font-family: $serifFont;
-  font-size: 3rem;
-}
-
-.thumbnail__text {
+.portfolio__title {
   font-family: $sansFont;
-  font: 4rem;
+  margin-top: 5.5rem;
+  @media screen and ($tablet){
+    display: none;
+  }
 }
 
-.thumbnail__btn, .modal__btn {
+.project__description-title {
   font-family: $sansFont;
   font-size: 2rem;
-  background-color: $secondaryColor;
-  //color: #d0d3c5;
-  border: 1px solid $secondaryColor;
+  color: $fontColor;
+  margin-top: 5px;
+  @media screen and ($tablet){
+    font-size: 3rem;
+  }
 }
 
-.thumbnail__btn:hover, .modal__btn:hover {
-  background-color: $linkColor;
-  //color: #d0d3c5;
-  border: 1px solid $linkColor;
-}
-
-.modal-header, .modal-body, .modal-footer{
-  background-color: #032b2f;
-  //color: #d0d3c5;
-  border-top: 1px solid #032b2f;
-  border-bottom: 1px solid #032b2f;
-}
-
-.modal-header {
-  font-family: $serifFont;
-  font-size: 3rem;
-}
-
-.modal-body, .modal-footer {
+.project__description-text {
   font-family: $sansFont;
-  font-size: 1.65rem;
-  line-height: 140%;
+  font-size: 1.5rem;
+  color: $fontColor;
+  @media screen and ($tablet){
+    font-size: 2rem;
+  }
 }
 
-.modal__link {
-  //color: #d0d3c5;
-  text-decoration: none;
+.project__description-divider {
+  margin: 0;
+  border-top: 1px solid $highlightColor;
 }
 
-.modal__link:hover {
-  //color: #d0d3c5;
-  text-decoration: none;
+.divider {
+  border-top: 1px solid $secondaryColor;
 }
+
+
+/* Footer styles */
+
 
 .footer {
   background-color: $secondaryColor;
@@ -312,24 +286,3 @@ html, body {
   color: $specialFontColor;
   cursor: pointer;
 }
-
-.icon {
-  height: 2rem;
-  fill: blue;
-}
-
-/*small screen media query*/
-// @media (max-width: 768px) {
-//     .header__nav {
-//         margin: 1rem 0;
-//         position: absolute;
-//         top: 5px;
-//     }
-//   .intro__title {
-//     margin-top: 5rem;
-//     margin-bottom: 3rem;
-//   }
-//     .top__welcome-text {
-//         font-size: 4.5rem;
-//     }
-// }

@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, inital-scale=1">
     <title>Adam J Berkowitz - Portfolio</title>
-<!--Abel for sans-serif-->
+
     <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-   <!--    Halant for serif font-->
+
     <link href='https://fonts.googleapis.com/css?family=Halant' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="css/mainstyles.css">
+    <link rel="stylesheet" href="build/css/normalize.css">
+    <link rel="stylesheet" href="build/css/bootstrap.min.css">
+    <link rel="stylesheet" href="build/css/stylesheet.css">
 
     <!-- <link rel="stylesheet" href="build/css/stylesheet.css"> -->
     <!--
@@ -21,18 +21,6 @@
 <body>
 <!-- Header w. nav links etc.-->
   <section class="container-fluid top">
-      <!-- <div class="row header__container">
-          <div class="col-md-12 header__nav">
-              <ul class="header__nav-list">
-                  <li class="header__nav-icons"><a class="header__nav-link" href="https://github.com/aberkow" target="_blank"><i class="fa fa-github-square fa-2x"></i></a></li>
-                  <li class="header__nav-icons"><a class="header__nav-link" href="https://www.linkedin.com/in/adamjberkowitz" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
-                  <li class="header__nav-icons"><a class="header__nav-link" href="https://www.facebook.com/berkowitz.clarinet" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a></li>
-                  <li class="header__nav-icons"><a class="header__nav-link" href="https://twitter.com/adamjberkowitz" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a></li>
-                  <li class="header__nav-icons"><a class="header__nav-link" href="mailto:adam@adamjberkowitz.com"><i class="fa fa-envelope fa-2x"></i></a></li>
-              </ul>
-
-          </div>
-      </div> -->
       <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container-fluid">
           <div class="navbar-header">
@@ -44,8 +32,8 @@
           <div class="collapse navbar-collapse" id="main__nav" role="navigation">
             <ul class="nav navbar-nav pull-right navbar__links">
               <li><a class="navbar__links-item" href="index.html">Home</a></li>
-              <li><a class="navbar__links-item" href="index.html">Portfolio</a></li>
-              <li><a class="navbar__links-item" href="index.html">Contact</a></li>
+              <li><a class="navbar__links-item" href="portfolio.html">Portfolio</a></li>
+              <li><a class="navbar__links-item" href="contact.html">Contact</a></li>
             </ul>
           </div>
 
@@ -163,196 +151,6 @@
                       <li class="list-group-item skills__list-item"><a href="https://ableton.com" target="_blank" class="text__link">Ableton Live</a></li>
                     </ul>
                 </div>
-              </div>
-            </div>
-          </div>
-<!--new portfolio design - thumbnail images with modal text-->
-          <h3 class="portfolio__title">Portfolio</h3>
-            <div class="row portfolio__row">
-              <!-- Example 1             -->
-
-            <!--  Example 3          -->
-            <div class="col-sm-6 col-md-3">
-                  <div class="thumbnail">
-                    <img src="./images/quiz-app-screenshot.jpg" alt="Fragile X Quiz" class="img-responsive">
-                    <div class="caption">
-                      <h3 class="thumbnail__title">Fragile X Quiz</h3>
-                        <p class="thumbnail__text">Skills: HTML5, CSS3, jQuery, JavaScript</p>
-                          <p><a href="#" class="btn btn-primary thumbnail__btn" role="button" data-toggle="modal" data-target="#modal3">Read More</a> </p>
-                    </div>
-                  </div>
-              </div>
-            <!-- Example 4             -->
-            <div class="col-sm-6 col-md-3">
-                  <div class="thumbnail">
-                    <img src="./images/bimodal-screenshot.jpg" alt="BiModal" class="img-responsive">
-                    <div class="caption">
-                      <h3 class="thumbnail__title">BiModal</h3>
-                        <p class="thumbnail__text">Skills: Max for Live</p>
-                          <p><a href="#" class="btn btn-primary thumbnail__btn" role="button" data-toggle="modal" data-target="#modal4">Read More</a> </p>
-                    </div>
-                  </div>
-              </div>
-            <!--Example 5              -->
-             <div class="col-sm-6 col-md-3">
-                  <div class="thumbnail">
-                    <img src="./images/maps-to-music-screenshot.jpg" alt="Maps to Music" class="img-responsive">
-                    <div class="caption">
-                      <h3 class="thumbnail__title">Maps to Music</h3>
-                        <p class="thumbnail__text">Skills: JavaScript, jQuery, Leaflet JS, Tone JS</p>
-                          <p><a href="#" class="btn btn-primary thumbnail__btn" role="button" data-toggle="modal" data-target="#modal5">Read More</a> </p>
-                    </div>
-                  </div>
-              </div>
-            <!--  Example 6            -->
-            <div class="col-sm-6 col-md-3">
-                 <div class="thumbnail">
-                   <img src="./images/blog.jpg" alt="Blog" class="img-responsive">
-                   <div class="caption">
-                     <h3 class="thumbnail__title">Blog</h3>
-                       <p class="thumbnail__text">Skills: Node, Express, Mongoose, Mocha/Chai, jQuery</p>
-                         <p><a href="#" class="btn btn-primary thumbnail__btn" role="button" data-toggle="modal" data-target="#modal6">Read More</a> </p>
-                   </div>
-                 </div>
-             </div>
-             <!-- Example 7 -->
-             <div class="col-sm-6 col-md-3">
-                  <div class="thumbnail">
-                    <img src="./images/synth.jpg" alt="Synth" class="img-responsive">
-                    <div class="caption">
-                      <h3 class="thumbnail__title">Synth</h3>
-                        <p class="thumbnail__text">Skills: ToneJs, NexusUI</p>
-                          <p><a href="#" class="btn btn-primary thumbnail__btn" role="button" data-toggle="modal" data-target="#modal7">Read More</a> </p>
-                    </div>
-                  </div>
-              </div>
-              <!-- Example 8 -->
-              <div class="col-sm-6 col-md-3">
-                   <div class="thumbnail">
-                     <img src="./images/daily-report.jpg" alt="Daily Report" class="img-responsive">
-                     <div class="caption">
-                       <h3 class="thumbnail__title">Daily Report</h3>
-                         <p class="thumbnail__text">Skills: React, Redux, Redux-Thunk</p>
-                           <p><a href="#" class="btn btn-primary thumbnail__btn" role="button" data-toggle="modal" data-target="#modal8">Read More</a> </p>
-                     </div>
-                   </div>
-               </div>
-            </div>
-
-
-          <div class="modal fade" id="modal3" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Fragile X Quiz</h4>
-                  </div>
-                <div class="modal-body">
-                <p class="modal__text">
-                This was a special project for me to work on. My youngest son has full mutation FXS and my wife and older son are both carriers. Other members of our family are carriers and have full mutation FXS as well. FXS is considered a rare disease even though the odds of being a carrier are fairly high. I wanted to make a simple application that would demonstrate my understanding of jQuery and JavaScript and address an important issue in my life and the lives of the people I care about. <br /><br />
-                Languages: HTML, CSS, jQuery, and JavaScript </p>
-                </div>
-                <div class="modal-footer">
-
-                 <a href="http://aberkow.github.io/quiz-app" target="_blank" class="btn btn-default modal__btn">Visit Project</a>
-                  <button type="button" class="btn btn-primary modal__btn" data-dismiss="modal">Close</button>
-                </div>
-                </div>
-              </div>
-            </div>
-          <!--  Modal 4              -->
-          <div class="modal fade" id="modal4" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">BiModal</h4>
-                  </div>
-                <div class="modal-body">
-                <p class="modal__text">I developed BiModal to solve a major issue users of Ableton's Push MIDI instrument were having. The Push wouldn't allow people to easily switch or save scales within their Live sets. In addition, every time the Push turned on, it would default to C major. What I came up with was a device that took advantage of these behaviors and built upon them. I used Max/MSP (aka Max6) and Max for Live (which uses the Ableton Live API). In the end my device allows users to: transpose incoming MIDI notes to different keys and scales, to play in two keys or scales at the same time, create custom scales, and save scale information in their Live sets as MIDI clips.</p>
-                </div>
-                <div class="modal-footer">
-                  <a href="https://www.youtube.com/playlist?list=PLPSceqINhxSF6vKpc5Z7HU3e84kqLDHuY" target="_blank" class="btn btn-default modal__btn">Visit Project</a>
-                  <button type="button" class="btn btn-primary modal__btn" data-dismiss="modal">Close</button>
-                </div>
-                </div>
-              </div>
-            </div>
-        <!-- Modal 5     -->
-            <div class="modal fade" id="modal5" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-              <div class="modal-dialog" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h4 class="modal-title" id="myModalLabel">Maps to Music</h4>
-                  </div>
-                <div class="modal-body">
-                <p class="modal__text">
-                Data can be represented in many different ways. Many times this data is in images like charts, graphs, or infographics. But that is not the only way to experience information. Another way is through sonification which turns data into sound.<br /><br />This project uses the MapQuest API to get driving directions between cities. Then the route is displayed and then can be played back as sound. The latitude and longitude are passed into a synthesizer created with <a href="http://tonejs.org/examples/" target="_blank" class="text__link">Tone.JS</a>. They are played back as a "melody" at 1,000th of the time it would take to make the actual trip.
-                </p>
-                </div>
-                <div class="modal-footer">
-
-                 <a href="http://aberkow.github.io/maps-to-music" target="_blank" class="btn btn-default modal__btn">Visit Project</a>
-                  <button type="button" class="btn btn-primary modal__btn" data-dismiss="modal">Close</button>
-                </div>
-                </div>
-              </div>
-            </div>
-          <!-- Modal 6 -->
-          <div class="modal fade" id="modal6" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h4 class="modal-title" id="myModalLabel">Blog</h4>
-                </div>
-              <div class="modal-body">
-              <p class="modal__text">
-              This application is a demonstration of server side development. In this case appearances can be deceiving. The purpose of this application was to develop a working API with a connection to a database.
-              </p>
-              </div>
-              <div class="modal-footer">
-
-               <a href="https://desolate-cliffs-81048.herokuapp.com/" target="_blank" class="btn btn-default modal__btn">Visit Project</a>
-                <button type="button" class="btn btn-primary modal__btn" data-dismiss="modal">Close</button>
-              </div>
-              </div>
-            </div>
-          </div>
-          <!-- Modal 7 -->
-          <div class="modal fade" id="modal7" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h4 class="modal-title" id="myModalLabel">Synth</h4>
-                </div>
-              <div class="modal-body">
-              <p class="modal__text">
-              This is one of my favorite projects! The <a href="http://nexusosc.com/" target="_blank">nexusUI web audio component library</a> is fantastic! It allows developers to develop musical applications in the browser. I combined these elements with ToneJS to develop the synthesizer and add a variety of effects.
-              </p>
-              </div>
-              <div class="modal-footer">
-
-               <a href="http://aberkow.github.io/synth/" target="_blank" class="btn btn-default modal__btn">Visit Project</a>
-                <button type="button" class="btn btn-primary modal__btn" data-dismiss="modal">Close</button>
-              </div>
-              </div>
-            </div>
-          </div>
-          <!-- Modal 8 -->
-          <div class="modal fade" id="modal8" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h4 class="modal-title" id="myModalLabel">Daily Report</h4>
-                </div>
-              <div class="modal-body">
-              <p class="modal__text">
-              I made this project using React (Facebook's front end framework) and Redux (the state management tool). They are a powerful combination for creating and maintaining web applications. While this project doesn't currently have its own back end, Redux's state management would make developing one a quick process.
-              </p>
-              </div>
-              <div class="modal-footer">
-
-               <a href="http://aberkow.github.io/daily-report-redux/" target="_blank" class="btn btn-default modal__btn">Visit Project</a>
-                <button type="button" class="btn btn-primary modal__btn" data-dismiss="modal">Close</button>
-              </div>
               </div>
             </div>
           </div>

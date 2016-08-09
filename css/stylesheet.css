@@ -28,6 +28,11 @@ html, body {
   font-size: 1.5rem; }
   .navbar .nav li a.navbar__links-item:hover {
     color: #00e7ff; }
+  .navbar .nav li a.navbar__links-item:active {
+    color: #ff6C00; }
+  @media screen and (min-width: 768px) {
+    .navbar .nav li a.navbar__links-item {
+      font-size: 2rem; } }
 
 .header__nav-icons, .footer__nav-icons {
   display: inline-block;
@@ -52,7 +57,7 @@ html, body {
 .main {
   padding: 0; }
 
-.main, .content {
+.main, .content, .portfolio, .contact {
   background-color: #f5f5f5; }
 
 .intro {
@@ -67,16 +72,7 @@ html, body {
   font-size: 4rem;
   margin-top: 6rem;
   margin-bottom: 0;
-  color: #032b2f;
-  /*
-  margin-top: 4rem;
-  margin-top: 0;
-  margin-bottom: 0rem;
-  text-align: center;
-  color: #032b2f;
-  font-family: $serifFont;
-  font-size: 8rem;
-  */ }
+  color: #032b2f; }
   @media screen and (min-width: 768px) {
     .intro__title {
       font-size: 7rem; } }
@@ -95,15 +91,7 @@ html, body {
 .intro__text {
   font-size: 2rem;
   font-family: "Halant", serif;
-  color: #032b2f;
-  /*
-  text-align: center;
-  margin-bottom: 1rem;
-  //margin: 4rem 2rem;
-  color: #032b2f;
-  font-size: 4rem;
-  font-family: $serifFont;
-  */ }
+  color: #032b2f; }
   @media screen and (min-width: 768px) {
     .intro__text {
       font-size: 3rem; } }
@@ -139,10 +127,16 @@ html, body {
   font-size: 1.75rem; }
 
 .list-group-item {
+  background-color: #f5f5f5;
+  border: 1px solid #f5f5f5;
   display: inline-block; }
 
 .portfolio__row {
   padding: 0 15px; }
+
+.panel {
+  background-color: #f5f5f5;
+  border: 1px solid #f5f5f5; }
 
 .panel-body {
   font-family: "Abel", sans-serif;
@@ -153,44 +147,45 @@ html, body {
   background-color: #00e7ff;
   border: 1px solid #00e7ff; }
 
-.thumbnail__title {
-  font-family: "Halant", serif;
-  font-size: 3rem; }
+/* Portfolio Page Styles */
+.project {
+  margin: 0; }
+  @media screen and (min-width: 768px) {
+    .project {
+      margin: 6rem auto; } }
 
-.thumbnail__text {
+.portfolio__title {
   font-family: "Abel", sans-serif;
-  font: 4rem; }
+  margin-top: 5.5rem; }
+  @media screen and (min-width: 768px) {
+    .portfolio__title {
+      display: none; } }
 
-.thumbnail__btn, .modal__btn {
+.project__description-title {
   font-family: "Abel", sans-serif;
   font-size: 2rem;
-  background-color: #032b2f;
-  border: 1px solid #032b2f; }
+  color: #032b2f;
+  margin-top: 5px; }
+  @media screen and (min-width: 768px) {
+    .project__description-title {
+      font-size: 3rem; } }
 
-.thumbnail__btn:hover, .modal__btn:hover {
-  background-color: #ff6C00;
-  border: 1px solid #ff6C00; }
-
-.modal-header, .modal-body, .modal-footer {
-  background-color: #032b2f;
-  border-top: 1px solid #032b2f;
-  border-bottom: 1px solid #032b2f; }
-
-.modal-header {
-  font-family: "Halant", serif;
-  font-size: 3rem; }
-
-.modal-body, .modal-footer {
+.project__description-text {
   font-family: "Abel", sans-serif;
-  font-size: 1.65rem;
-  line-height: 140%; }
+  font-size: 1.5rem;
+  color: #032b2f; }
+  @media screen and (min-width: 768px) {
+    .project__description-text {
+      font-size: 2rem; } }
 
-.modal__link {
-  text-decoration: none; }
+.project__description-divider {
+  margin: 0;
+  border-top: 1px solid #00e7ff; }
 
-.modal__link:hover {
-  text-decoration: none; }
+.divider {
+  border-top: 1px solid #032b2f; }
 
+/* Footer styles */
 .footer {
   background-color: #032b2f;
   height: 10rem; }
@@ -210,9 +205,3 @@ html, body {
 .footer__nav-icons > a:hover {
   color: #00e7ff;
   cursor: pointer; }
-
-.icon {
-  height: 2rem;
-  fill: blue; }
-
-/*small screen media query*/

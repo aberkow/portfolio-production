@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, inital-scale=1">
+  <title>Portfolio</title>
+
+  <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+
+  <link href='https://fonts.googleapis.com/css?family=Halant' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="build/css/normalize.css">
+  <link rel="stylesheet" href="build/css/bootstrap.min.css">
+  <link rel="stylesheet" href="build/css/stylesheet.css">
+</head>
+<body>
+  <section class="container-fluid">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main__nav" aria-expanded="false">
+            <span class="toggle__text">MENU</span>
+          </button>
+
+        </div>
+        <div class="collapse navbar-collapse" id="main__nav" role="navigation">
+          <ul class="nav navbar-nav pull-right navbar__links">
+            <li><a class="navbar__links-item" href="index.html">Home</a></li>
+            <li><a class="navbar__links-item" href="portfolio.html">Portfolio</a></li>
+            <li><a class="navbar__links-item" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </section>
+  <section class="portfolio">
+    <h3 class="portfolio__title">Portfolio</h3>
+    <div class="container-fluid">
+      <div class="row portfolio__row">
+        <div class="project">
+          <div class="project__image col-md-8">
+            <img src="./images/quiz-full.jpg" alt="Fragile X Quiz" class="img-responsive">
+          </div>
+          <div class="project__description col-md-4">
+            <p class="project__description-title"><strong>Fragile X Quiz</strong></p>
+            <p class="project__description-text">Technologies: HTML5, CSS3, jQuery, JavaScript</p>
+            <hr class="project__description-divider" />
+            <p class="project__description-text">
+              This was a special project for me to work on. My youngest son has full mutation FXS and my wife and older son are both carriers. Other members of our family are carriers and have full mutation FXS as well. FXS is considered a rare disease even though the odds of being a carrier are fairly high. I wanted to make a simple application that would demonstrate my understanding of jQuery and JavaScript and address an important issue in my life and the lives of the people I care about.
+            </p>
+          </div>
+        </div>
+        <hr class="divider" />
+        <div class="project">
+          <div class="project__image col-md-8">
+            <img src="./images/maps-to-music-full.jpg" alt="Maps to Music" class="img-responsive">
+          </div>
+          <div class="project__description col-md-4">
+            <p class="project__description-title"><strong>Maps to Music</strong></p>
+            <p class="project__description-text">Technologies: HTML5, CSS3, jQuery, JavaScript, Leaflet JS, Tone JS</p>
+            <hr class="project__description-divider"/>
+            <p class="project__description-text">
+              Data can be represented in many different ways. Many times this data is in images like charts, graphs, or infographics. But that is not the only way to experience information. Another way is through sonification which turns data into sound.<br /><br />This project uses the MapQuest API to get driving directions between cities. Then the route is displayed and then can be played back as sound. The latitude and longitude are passed into a synthesizer created with <a href="http://tonejs.org/examples/" target="_blank" class="text__link">Tone.JS</a>. They are played back as a "melody" at 1,000th of the time it would take to make the actual trip.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="project">
+          <div class="project__image col-md-8">
+            <img src="./images/blog-full.jpg" alt="Blog Project" class="img-responsive">
+          </div>
+          <div class="project__description col-md-4">
+            <p class="project__description-title"><strong>Blog</strong></p>
+            <p class="project__description-text">Technologies: Node, Express, Mongoose, Mocha/Chai, jQuery</p>
+            <hr class="project__description-divider" />
+            <p class="project__description-text">
+              This application is a demonstration of server side development. In this case appearances can be deceiving. The purpose of this application was to develop a working API with a connection to a database.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="project">
+          <div class="project__image col-md-8">
+            <img src="./images/synth-full.jpg" alt="Synth" class="img-responsive">
+          </div>
+          <div class="project__description col-md-4">
+            <p class="project__description-title"><strong>Synth</strong></p>
+            <p class="project__description-text">Technologies: Bourbon/Neat, ToneJs, NexusUI</p>
+            <hr class="project__description-divider" />
+            <p class="project__description-text">
+              This is one of my favorite projects! The <a href="http://nexusosc.com/" target="_blank">nexusUI web audio component library</a> is fantastic! It allows developers to develop musical applications in the browser. I combined these elements with ToneJS to develop the synthesizer and add a variety of effects.
+            </p>
+          </div>
+        </div>
+        <hr />
+        <div class="project">
+          <div class="project__image col-md-8">
+            <img src="./images/daily-report-full.jpg" alt="Daily Report" class="img-responsive">
+          </div>
+          <div class="project__description col-md-4">
+            <p class="project__description-title"><strong>Daily Report</strong></p>
+            <p class="project__description-text">Technologies: CSS3, Webpack, React, Redux, Redux-Thunk, axios</p>
+            <hr class="project__description-divider" />
+            <p class="project__description-text">
+              I made this project using React (Facebook's front end framework) and Redux (the state management tool). They are a powerful combination for creating and maintaining web applications. While this project doesn't currently have its own back end, Redux's state management would make developing one a quick process.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+<!-- footer       -->
+<footer class="container-fluid footer">
+   <div class="footer__area">
+     <p class="footer__area-text">Thanks for visiting. Let's meet up! - Adam</p>
+     <ul class="footer__nav-list">
+          <li class="footer__nav-icons"><a href="https://github.com/aberkow" target="_blank"><i class="fa fa-github-square fa-2x"></i></a></li>
+          <li class="footer__nav-icons"><a href="https://www.linkedin.com/in/adamjberkowitz" target="_blank"><i class="fa fa-linkedin-square fa-2x"></i></a></li>
+          <li class="footer__nav-icons"><a href="https://www.facebook.com/berkowitz.clarinet" target="_blank"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+          <li class="footer__nav-icons"><a href="https://twitter.com/adamjberkowitz" target="_blank"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+          <li class="footer__nav-icons"><a href="mailto:adam@adamjberkowitz.com"><i class="fa fa-envelope fa-2x"></i></a></li>
+      </ul>
+   </div>
+
+</footer>
+</section>
+<!--scripts    -->
+<script src="http://code.jquery.com/jquery.min.js"></script>
+<script src="./js/bootstrap.min.js"></script>
+<!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>  -->
+</body>
+</html>
+</body>
+</html>

@@ -91,9 +91,8 @@ utils = {
       .pipe(sass())
       .pipe(gulp.dest('css'));
   },
-  styles: function(){
+  css: function(){
     return gulp.src('css/*.css')
-      .pipe(concat('stylesheet.css'))
       .pipe(cleanCSS())
       .pipe(gulp.dest('build/css'));
   },
@@ -126,7 +125,7 @@ gulp.task('miniHTML', utils.miniHTML);
 gulp.task('images', utils.images);
 gulp.task('jshint', utils.jshint);
 gulp.task('sass', utils.sass);
-gulp.task('styles', utils.styles);
+gulp.task('css', utils.css);
 gulp.task('watch', utils.watch);
-gulp.task('buildStyles', ['sass', 'styles', 'watch']);
+gulp.task('buildStyles', ['sass', 'css', 'watch']);
 gulp.task('default', ['jshint', 'sass', 'watch']);
