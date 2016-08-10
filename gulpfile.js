@@ -33,6 +33,10 @@ clean = {
   cleanRoot: function(){
     return del.sync([
       './build/**',
+      '!./build/node_modules',
+      '!./build/.gitignore',
+      '!./build/.git',
+      '!./build/package.json',
       '!./build'
     ])
   },
@@ -44,7 +48,7 @@ clean = {
       dryRun: true
     })
     .then(paths => {
-      console.log('files/folders taht would be deleted:\n', paths.join('\n'));
+      console.log('files/folders that would be deleted:\n', paths.join('\n'));
     });
   }
 }
@@ -65,7 +69,7 @@ copy = {
       .pipe(gulp.dest('./build/js'))
   },
   copyRoot: function(){
-    gulp.src(['./**/*','!gulpfile.js', '!.gitignore', '!build', '!public', '!scss'])
+    gulp.src(['./*.html', './package.json'])
       .pipe(gulp.dest('./build'))
   }
 }
