@@ -210,6 +210,10 @@ html, body {
 .divider {
   border-top: 1px solid #032b2f; }
 
+/* Contact styles */
+.typeform-default {
+  background-color: #f5f5f5; }
+
 /* Footer styles */
 .footer {
   background-color: #032b2f;
