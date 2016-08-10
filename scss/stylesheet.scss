@@ -1,0 +1,329 @@
+$mainColor: #f5f5f5;
+$secondaryColor: #032b2f;
+$highlightColor: #00e7ff;
+$fontColor: #032b2f;
+$secondaryFontColor: #f5f5f5;
+$specialFontColor: #00e7ff;
+$linkColor: #ff6C00;
+
+//media query variables
+$phone: 'min-width: 375px';
+$tablet: 'min-width: 768px';
+$laptop: 'min-width: 1024px';
+$desktop: 'min-width: 1440px';
+
+//font families
+$serifFont: 'Halant', serif;
+$sansFont: 'Abel', sans-serif;
+
+@mixin centerer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@function tint($color, $percentage){
+  @return mix(white, $color, $percentage);
+}
+
+@function shade($color, $percentage){
+  @return mix(black, $color, $percentage);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+.top {
+  height: 100%;
+  background-color: rgba($mainColor, 0);
+  background-image: url(../images/laptop.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: overlay;
+}
+
+.navbar, .navbar-default {
+  background-color: $mainColor;
+  border: 1px solid $mainColor;
+}
+
+.navbar-toggle {
+  .toggle__text {
+    color: $fontColor;
+    font-size: 1.5rem;
+    font-family: $sansFont;
+  }
+}
+
+.navbar .nav li a.navbar__links-item {
+  color: $fontColor;
+  font-family: $sansFont;
+  font-size: 1.5rem;
+  &:hover {
+    color: $specialFontColor;
+  }
+  &:active {
+    color: $linkColor;
+  }
+  @media screen and ($tablet){
+    font-size: 2rem;
+  }
+}
+
+.header__nav-icons, .footer__nav-icons {
+  display: inline-block;
+  list-style-type: none;
+}
+
+.navbar-nav li.dropdown a.dropdown-toggle {
+  color: $fontColor;
+  font-size: 1.5rem;
+  font-family: $sansFont;
+  background-color: rgba(0, 0, 0, 0);
+  &:hover {
+    color: $specialFontColor;
+  }
+  @media screen and ($tablet){
+    font-size: 2rem;
+  }
+}
+
+.navbar-nav li.dropdown ul.dropdown-menu {
+  margin-left: -8rem;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: 0, 0, 0, rgba(0, 0, 0, 0);
+}
+
+.dropdown-menu li.header__nav-icons a.header__nav-link {
+  padding: 0;
+}
+
+//crazy long selector to get the colors just right on the social icons.
+.navbar-default .navbar-nav .open .dropdown-menu li.header__nav-icons a.header__nav-link {
+  color: $fontColor;
+  font-size: 1.5rem;
+  &:hover {
+    background-color: rgba(0, 0, 0, 0);
+    color: $specialFontColor;
+  }
+  &:active {
+    color: $linkColor;
+  }
+}
+
+// .fa-linkedin-square, .fa-facebook-square, .fa-twitter-square, .fa-envelope {
+//     padding-left: 0.5rem;
+// }
+
+/*Hide the unsplash credit on scroll*/
+.top__credit {
+  color: $mainColor;
+  position: absolute;
+  bottom: 20px;
+  right: 45px;
+  font-size: 1.5rem;
+  font-family: $sansFont;
+}
+
+.top__credit a {
+  color: $linkColor;
+  text-decoration: none;
+}
+
+.main {
+  padding: 0;
+}
+
+.main, .content, .portfolio, .contact {
+  background-color: $mainColor;
+}
+
+.intro {
+  @include centerer;
+  text-align: center;
+}
+
+.intro__title {
+
+  font-family: $serifFont;
+  font-size: 4rem;
+  margin-top: 6rem;
+  margin-bottom: 0;
+  color: #032b2f;
+  @media screen and ($tablet){
+    font-size: 7rem;
+  }
+  @media screen and ($laptop){
+    font-size: 10rem;
+  }
+}
+
+.intro__headshot {
+  margin-top: 1rem;
+  text-align: center;
+  transform: rotate(-13deg);
+}
+
+.intro__headshot-img {
+  height: 17rem;
+}
+
+.intro__text {
+  font-size: 2rem;
+  font-family: $serifFont;
+  color: #032b2f;
+  @media screen and ($tablet){
+    font-size: 3rem;
+  }
+}
+
+.about, .current {
+  padding: 4rem 3rem 0;
+}
+
+.about__title, .current__project-title, .skills__title, .portfolio__title {
+  font-family: $sansFont;
+  font-size: 3rem;
+  color: #032b2f;
+}
+
+.portfolio__title {
+  padding-left: 15px;
+}
+
+.about__text, .current__project-text {
+  font-family: $sansFont;
+  font-size: 2rem;
+  color: #032b2f;
+}
+
+.text__link {
+  color: $linkColor;
+  &:hover {
+    color: shade($linkColor, 70%);
+  }
+}
+
+.skills__list-head {
+  font-family: $sansFont;
+  font-size: 2rem;
+  color: #032b2f;
+}
+
+.list-group {
+  font-family: $sansFont;
+  font-size: 1.75rem;
+}
+
+.list-group-item {
+  background-color: $mainColor;
+  border: 1px solid $mainColor;
+  display: inline-block;
+}
+
+.portfolio__row {
+  padding: 0 15px;
+}
+
+.panel {
+  background-color: $mainColor;
+  border: 1px solid $mainColor;
+}
+
+.panel-body {
+  font-family: $sansFont;
+  font-size: 1.75rem;
+  color: #1a2930;
+}
+
+
+.panel-default > .panel-heading {
+  background-color: $highlightColor;
+  border: 1px solid $highlightColor;
+}
+
+/* Portfolio Page Styles */
+
+.project {
+  margin: 0;
+  @media screen and ($tablet){
+    margin: 6rem auto;
+  }
+}
+
+.portfolio__title {
+  font-family: $sansFont;
+  margin-top: 5.5rem;
+  @media screen and ($tablet){
+    display: none;
+  }
+}
+
+.project__description-title {
+  font-family: $sansFont;
+  font-size: 2rem;
+  color: $fontColor;
+  margin-top: 5px;
+  @media screen and ($tablet){
+    font-size: 3rem;
+  }
+}
+
+.project__description-text {
+  font-family: $sansFont;
+  font-size: 1.5rem;
+  color: $fontColor;
+  @media screen and ($tablet){
+    font-size: 2rem;
+  }
+}
+
+.project__description-divider {
+  margin: 0;
+  border-top: 1px solid $highlightColor;
+}
+
+.divider {
+  border-top: 1px solid $secondaryColor;
+}
+
+/* Contact styles */
+.typeform-default {
+  background-color: $mainColor;
+}
+
+
+/* Footer styles */
+
+
+.footer {
+  background-color: $secondaryColor;
+  height: 10rem;
+}
+
+.footer__area {
+  text-align: center;
+  color: $secondaryFontColor;
+  margin: 1rem 0;
+}
+
+.footer__area-text {
+  font-family: $serifFont;
+  font-size: 1.5rem;
+}
+
+.footer__nav-icons > a {
+  color: $secondaryFontColor;
+}
+
+.footer__nav-icons > a:hover {
+  color: $specialFontColor;
+  cursor: pointer;
+}
