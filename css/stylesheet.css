@@ -38,9 +38,21 @@ html, body {
   display: inline-block;
   list-style-type: none; }
 
+.navbar-nav li.dropdown a.dropdown-toggle {
+  color: #032b2f;
+  font-size: 1.5rem;
+  font-family: "Abel", sans-serif;
+  background-color: transparent; }
+  .navbar-nav li.dropdown a.dropdown-toggle:hover {
+    color: #00e7ff; }
+  @media screen and (min-width: 768px) {
+    .navbar-nav li.dropdown a.dropdown-toggle {
+      font-size: 2rem; } }
+
 .navbar-nav li.dropdown ul.dropdown-menu {
   margin-left: -8rem;
-  background-color: transparent; }
+  background-color: transparent;
+  box-shadow: 0, 0, 0, transparent; }
 
 .dropdown-menu li.header__nav-icons a.header__nav-link {
   padding: 0; }
