@@ -1,11 +1,9 @@
 * {
   box-sizing: border-box;
-  padding: 0;
-}
+  padding: 0; }
 
 html, body {
   height: 100%; }
-
 
 .top {
   height: 100%;
@@ -37,35 +35,6 @@ html, body {
       font-size: 2rem; } }
 
 .header__nav-icons, .footer__nav-icons {
-/*<<<<<<< HEAD
-    display: inline-block;
-    list-style-type: none;
-}
-
-.fa-linkedin-square, .fa-facebook-square, .fa-twitter-square, .fa-envelope {
-    padding-left: 0.5rem;
-}
-
-.header__nav-icons > a {
-    color: #d73a31;
-}
-
-.header__nav-icons > a:hover {
-    color: #032b2f;
-    cursor: pointer;
-}
-
-.top__welcome {
-    text-align: center;
-    color: #032b2f;
-}
-
-.top__welcome-text {
-    margin-top: 20rem;
-    font-family: Halant, serif;
-    font-size: 5rem;
-}
-=======*/
   display: inline-block;
   list-style-type: none; }
 
@@ -96,7 +65,6 @@ html, body {
     color: #00e7ff; }
   .navbar-default .navbar-nav .open .dropdown-menu li.header__nav-icons a.header__nav-link:active {
     color: #ff6C00; }
-/*>>>>>>> 5837d262fb5a6f031061abdcca691897b4419353*/
 
 /*Hide the unsplash credit on scroll*/
 .top__credit {
@@ -125,16 +93,6 @@ html, body {
   text-align: center; }
 
 .intro__title {
-/*<<<<<<< HEAD
-    margin-top: 4rem;
-    margin-top: 0;
-    margin-bottom: 4rem;
-    text-align: center;
-    color: #032b2f;
-    font-family: Halant, serif;
-    font-size: 8rem;
-}
-=======*/
   font-family: "Halant", serif;
   font-size: 4rem;
   margin-top: 6rem;
@@ -146,7 +104,6 @@ html, body {
   @media screen and (min-width: 1024px) {
     .intro__title {
       font-size: 10rem; } }
-/*>>>>>>> 5837d262fb5a6f031061abdcca691897b4419353*/
 
 .intro__headshot {
   margin-top: 1rem;
@@ -165,12 +122,7 @@ html, body {
       font-size: 3rem; } }
 
 .about, .current {
-/*<<<<<<< HEAD
-  padding: 4rem 3rem 0;
-}
-=======*/
   padding: 4rem 3rem 0; }
-/*>>>>>>> 5837d262fb5a6f031061abdcca691897b4419353*/
 
 .about__title, .current__project-title, .skills__title, .portfolio__title {
   font-family: "Abel", sans-serif;
@@ -212,18 +164,9 @@ html, body {
   border: 1px solid #f5f5f5; }
 
 .panel-body {
-/*<<<<<<< HEAD
-    font-family: Abel, sans-serif;
-    font-size: 1.75rem;
-    color: #1a2930;
-
-}
-
-=======*/
   font-family: "Abel", sans-serif;
   font-size: 1.75rem;
   color: #1a2930; }
-/*>>>>>>> 5837d262fb5a6f031061abdcca691897b4419353*/
 
 .panel-default > .panel-heading {
   background-color: #00e7ff;
@@ -273,15 +216,8 @@ html, body {
 
 /* Footer styles */
 .footer {
-/*<<<<<<< HEAD
-    background-color: #08708a;
-    height: 10rem;
-
-}
-=======*/
   background-color: #032b2f;
   height: 10rem; }
-/*>>>>>>> 5837d262fb5a6f031061abdcca691897b4419353*/
 
 .footer__area {
   text-align: center;
@@ -296,32 +232,5 @@ html, body {
   color: #f5f5f5; }
 
 .footer__nav-icons > a:hover {
-/*<<<<<<< HEAD
-    color: #032b2f;
-    cursor: pointer;
-}
-
-.icon {
-    height: 2rem;
-    fill: blue;
-}
-
-/*small screen media query*/
-/*@media (max-width: 768px) {
-    .header__nav {
-        margin: 1rem 0;
-        position: absolute;
-        top: 5px;
-    }
-  .intro__title {
-    margin-top: 5rem;
-    margin-bottom: 3rem;
-  }
-    .top__welcome-text {
-        font-size: 4.5rem;
-    }
-}
-=======*/
   color: #00e7ff;
   cursor: pointer; }
-/*>>>>>>> 5837d262fb5a6f031061abdcca691897b4419353*/
